@@ -1,0 +1,4846 @@
+{
+  "title": "720-Word Quantum Grammar Basis Set",
+  "description": "720 = 6! — the complete permutation space of the six sentence positions in C.S.S.C.P.S.G.P. correct grammar. Each word is decomposed, classified by jurisdiction, and evaluated for now-time validity.",
+  "positions": {
+    "PREPOSITION": {
+      "position": 1,
+      "description": "Grounding word — establishes relationship in now-time",
+      "function": "Anchors the sentence to a prepositional framework"
+    },
+    "ARTICLE": {
+      "position": 2,
+      "description": "Pointer/determiner — identifies which noun is referenced",
+      "function": "Points to the specific fact-carrier"
+    },
+    "ADJECTIVE": {
+      "position": 3,
+      "description": "Descriptor — opinion or quality, not a fact itself",
+      "function": "Modifies the noun (the fact-carrier)"
+    },
+    "NOUN": {
+      "position": 4,
+      "description": "Fact-carrier — the primary vessel of meaning",
+      "function": "Carries the FACT. No nouns = no facts = void sentence"
+    },
+    "VERB_GERUND": {
+      "position": 5,
+      "description": "Action in now-time — must be in -ING gerund form",
+      "function": "The doing. Only now-time (-ING) is living/factual"
+    },
+    "ADVERB": {
+      "position": 6,
+      "description": "Modifier of the verb — says nothing alone",
+      "function": "Modifies the action. Warning: adverb chains = null construction"
+    }
+  },
+  "total_words": 253,
+  "basis": [
+    {
+      "word": "for",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "for",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "for",
+      "apparent_meaning": "common usage of 'for'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "by",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "by",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "by",
+      "apparent_meaning": "common usage of 'by'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "of",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "of",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "of",
+      "apparent_meaning": "common usage of 'of'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "with",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "with",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "with",
+      "apparent_meaning": "common usage of 'with'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "in",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "in",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "in",
+      "apparent_meaning": "common usage of 'in'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "against",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "gainst",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + gainst",
+      "apparent_meaning": "common usage of 'against'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "from",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "from",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "from",
+      "apparent_meaning": "common usage of 'from'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "to",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "to",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "to",
+      "apparent_meaning": "common usage of 'to'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "through",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "through",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "through",
+      "apparent_meaning": "common usage of 'through'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "between",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "betwe",
+        "root_meaning": "",
+        "suffix": "en",
+        "suffix_meaning": "to make/made of"
+      },
+      "true_meaning": "betwe + (to make/made of)",
+      "apparent_meaning": "common usage of 'between'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "among",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "mon",
+        "root_meaning": "warn/remind",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + warn/remind",
+      "apparent_meaning": "common usage of 'among'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "within",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "within",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "within",
+      "apparent_meaning": "common usage of 'within'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "without",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "without",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "without",
+      "apparent_meaning": "common usage of 'without'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "upon",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "pon",
+        "root_meaning": "place/put",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "place/put",
+      "apparent_meaning": "common usage of 'upon'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "under",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "un",
+        "prefix_meaning": "not/reverse",
+        "root": "der",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NOT/REVERSE + der",
+      "apparent_meaning": "common usage of 'under'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "over",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "ver",
+        "root_meaning": "turn",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + turn",
+      "apparent_meaning": "common usage of 'over'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "before",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "before",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "before",
+      "apparent_meaning": "common usage of 'before'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "after",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ft",
+        "root_meaning": "",
+        "suffix": "er",
+        "suffix_meaning": "one who/that which"
+      },
+      "true_meaning": "NO/WITHOUT + ft + (one who/that which)",
+      "apparent_meaning": "common usage of 'after'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "during",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "dur",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "dur + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'during'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "about",
+      "role": "PREPOSITION",
+      "position": 1,
+      "position_description": "Grounding word — establishes relationship in now-time",
+      "decomposition": {
+        "prefix": "ab",
+        "prefix_meaning": "away from",
+        "root": "out",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "AWAY FROM + out",
+      "apparent_meaning": "common usage of 'about'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "the",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "the",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "the",
+      "apparent_meaning": "common usage of 'the'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "a",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "a",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "a",
+      "apparent_meaning": "common usage of 'a'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "an",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "an",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "an",
+      "apparent_meaning": "common usage of 'an'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "this",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "this",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "this",
+      "apparent_meaning": "common usage of 'this'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "that",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "that",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "that",
+      "apparent_meaning": "common usage of 'that'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "these",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "these",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "these",
+      "apparent_meaning": "common usage of 'these'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "those",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "those",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "those",
+      "apparent_meaning": "common usage of 'those'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "every",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "e",
+        "prefix_meaning": "out of",
+        "root": "ver",
+        "root_meaning": "turn",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "OUT OF + turn",
+      "apparent_meaning": "common usage of 'every'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "each",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "e",
+        "prefix_meaning": "out of",
+        "root": "ach",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "OUT OF + ach",
+      "apparent_meaning": "common usage of 'each'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "some",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "some",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "some",
+      "apparent_meaning": "common usage of 'some'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "no",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "no",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "no",
+      "apparent_meaning": "common usage of 'no'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "all",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ll",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + ll",
+      "apparent_meaning": "common usage of 'all'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "any",
+      "role": "ARTICLE",
+      "position": 2,
+      "position_description": "Pointer/determiner — identifies which noun is referenced",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ny",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + ny",
+      "apparent_meaning": "common usage of 'any'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "living",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "liv",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "liv + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'living'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "dead",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "ad",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + ad",
+      "apparent_meaning": "common usage of 'dead'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "correct",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "cor",
+        "prefix_meaning": "together (before r)",
+        "root": "rect",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "TOGETHER (BEFORE R) + rect",
+      "apparent_meaning": "common usage of 'correct'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "false",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fa",
+        "root_meaning": "speak",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "speak",
+      "apparent_meaning": "common usage of 'false'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "true",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "true",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "true",
+      "apparent_meaning": "common usage of 'true'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "valid",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "val",
+        "root_meaning": "worth/strong",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "worth/strong",
+      "apparent_meaning": "common usage of 'valid'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "void",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "void",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "void",
+      "apparent_meaning": "common usage of 'void'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "lawful",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "law",
+        "root_meaning": "",
+        "suffix": "ful",
+        "suffix_meaning": "full of"
+      },
+      "true_meaning": "law + (full of)",
+      "apparent_meaning": "common usage of 'lawful'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "legal",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "leg",
+        "root_meaning": "read/law/choose",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "read/law/choose + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'legal'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "private",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "priv",
+        "root_meaning": "",
+        "suffix": "ate",
+        "suffix_meaning": "to make/through/state"
+      },
+      "true_meaning": "priv + (to make/through/state)",
+      "apparent_meaning": "common usage of 'private'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "public",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "publ",
+        "root_meaning": "",
+        "suffix": "ic",
+        "suffix_meaning": "pertaining to/having nature of"
+      },
+      "true_meaning": "publ + (pertaining to/having nature of)",
+      "apparent_meaning": "common usage of 'public'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "sovereign",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sover",
+        "root_meaning": "above/supreme",
+        "suffix": "eign",
+        "suffix_meaning": "rule/reign"
+      },
+      "true_meaning": "one who rules from above — supreme authority on the land",
+      "apparent_meaning": "a supreme ruler; possessing supreme power",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "foreign",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "fore",
+        "prefix_meaning": "before/in front",
+        "root": "ign",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "BEFORE/IN FRONT + ign",
+      "apparent_meaning": "common usage of 'foreign'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "domestic",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "dom",
+        "root_meaning": "rule/judgment",
+        "suffix": "ic",
+        "suffix_meaning": "pertaining to/having nature of"
+      },
+      "true_meaning": "rule/judgment + (pertaining to/having nature of)",
+      "apparent_meaning": "common usage of 'domestic'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "natural",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "nat",
+        "root_meaning": "born/birth",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "born/birth + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'natural'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "artificial",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "fic",
+        "root_meaning": "make/do/fiction",
+        "suffix": "ial",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "NO/WITHOUT + make/do/fiction + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'artificial'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "original",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "rigin",
+        "root_meaning": "",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "NO/WITHOUT + rigin + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'original'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "counterfeit",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "counter",
+        "prefix_meaning": "against/opposite",
+        "root": "feit",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "AGAINST/OPPOSITE + feit",
+      "apparent_meaning": "common usage of 'counterfeit'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "genuine",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "gen",
+        "root_meaning": "birth/kind/origin",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "birth/kind/origin",
+      "apparent_meaning": "common usage of 'genuine'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "fraudulent",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "aud",
+        "root_meaning": "hear",
+        "suffix": "ent",
+        "suffix_meaning": "one who/performing"
+      },
+      "true_meaning": "hear + (one who/performing)",
+      "apparent_meaning": "common usage of 'fraudulent'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "free",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "free",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "free",
+      "apparent_meaning": "common usage of 'free'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "bound",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "bound",
+        "root_meaning": "limit/border",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "limit/border",
+      "apparent_meaning": "common usage of 'bound'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "whole",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "whole",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "whole",
+      "apparent_meaning": "common usage of 'whole'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "partial",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "part",
+        "root_meaning": "",
+        "suffix": "ial",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "part + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'partial'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "proper",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "pro",
+        "prefix_meaning": "forward/for",
+        "root": "per",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "FORWARD/FOR + per",
+      "apparent_meaning": "common usage of 'proper'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "actual",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ct",
+        "root_meaning": "",
+        "suffix": "ual",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "NO/WITHOUT + ct + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'actual'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "real",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "al",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "AGAIN/BACK + al",
+      "apparent_meaning": "common usage of 'real'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "fictional",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fic",
+        "root_meaning": "make/do/fiction",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "make/do/fiction + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'fictional'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": false
+    },
+    {
+      "word": "present",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "pre",
+        "prefix_meaning": "before",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "BEFORE + feel/think",
+      "apparent_meaning": "common usage of 'present'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "absent",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "ab",
+        "prefix_meaning": "away from",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "AWAY FROM + feel/think",
+      "apparent_meaning": "common usage of 'absent'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": false,
+      "negated": true
+    },
+    {
+      "word": "direct",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "direct",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "direct",
+      "apparent_meaning": "common usage of 'direct'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "indirect",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "in",
+        "prefix_meaning": "no/not/into",
+        "root": "direct",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/NOT/INTO + direct",
+      "apparent_meaning": "common usage of 'indirect'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "written",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "writt",
+        "root_meaning": "",
+        "suffix": "en",
+        "suffix_meaning": "to make/made of"
+      },
+      "true_meaning": "writt + (to make/made of)",
+      "apparent_meaning": "common usage of 'written'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "oral",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "ral",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + ral",
+      "apparent_meaning": "common usage of 'oral'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "material",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "mater",
+        "root_meaning": "",
+        "suffix": "ial",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "mater + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'material'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "substantial",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "sub",
+        "prefix_meaning": "under/below",
+        "root": "sta",
+        "root_meaning": "stand",
+        "suffix": "ial",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "UNDER/BELOW + stand + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'substantial'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "just",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "just",
+        "root_meaning": "law/right",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "law/right",
+      "apparent_meaning": "common usage of 'just'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "unjust",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "un",
+        "prefix_meaning": "not/reverse",
+        "root": "just",
+        "root_meaning": "law/right",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NOT/REVERSE + law/right",
+      "apparent_meaning": "common usage of 'unjust'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": false,
+      "negated": true
+    },
+    {
+      "word": "certain",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "tain",
+        "root_meaning": "hold/keep",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "hold/keep",
+      "apparent_meaning": "common usage of 'certain'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "uncertain",
+      "role": "ADJECTIVE",
+      "position": 3,
+      "position_description": "Descriptor — opinion or quality, not a fact itself",
+      "decomposition": {
+        "prefix": "un",
+        "prefix_meaning": "not/reverse",
+        "root": "tain",
+        "root_meaning": "hold/keep",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NOT/REVERSE + hold/keep",
+      "apparent_meaning": "common usage of 'uncertain'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": false,
+      "negated": true
+    },
+    {
+      "word": "man",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "man",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "man",
+      "apparent_meaning": "common usage of 'man'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "woman",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "woman",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "woman",
+      "apparent_meaning": "common usage of 'woman'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "claim",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "claim",
+        "root_meaning": "cry out/demand",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "cry out/demand",
+      "apparent_meaning": "common usage of 'claim'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "land",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "land",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "land",
+      "apparent_meaning": "common usage of 'land'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "soil",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "soil",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "soil",
+      "apparent_meaning": "common usage of 'soil'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "vessel",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "vessel",
+        "root_meaning": "container/ship (Latin vascellum)",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "a container for cargo — the body as a vessel in maritime law",
+      "apparent_meaning": "a ship or boat; a container; a blood vessel",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "cargo",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "cargo",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "cargo",
+      "apparent_meaning": "common usage of 'cargo'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "contract",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "con",
+        "prefix_meaning": "together/with",
+        "root": "tract",
+        "root_meaning": "pull/draw",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "pulled together — two parties drawn into binding agreement",
+      "apparent_meaning": "a legally binding agreement",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "fact",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fact",
+        "root_meaning": "make/do",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "make/do",
+      "apparent_meaning": "common usage of 'fact'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "law",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "law",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "law",
+      "apparent_meaning": "common usage of 'law'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "right",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "right",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "right",
+      "apparent_meaning": "common usage of 'right'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "duty",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "du",
+        "root_meaning": "",
+        "suffix": "ty",
+        "suffix_meaning": "quality/state"
+      },
+      "true_meaning": "du + (quality/state)",
+      "apparent_meaning": "common usage of 'duty'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "trust",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "trust",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "trust",
+      "apparent_meaning": "common usage of 'trust'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "estate",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "e",
+        "prefix_meaning": "out of",
+        "root": "stat",
+        "root_meaning": "stand/state/fixed",
+        "suffix": "ate",
+        "suffix_meaning": "to make/through/state"
+      },
+      "true_meaning": "a standing out of — one's fixed position/property in law",
+      "apparent_meaning": "property, especially land; a person's total possessions",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "title",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "title",
+        "root_meaning": "inscription/claim/designation (Latin titulus)",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "an inscription of claim — the label on the cargo",
+      "apparent_meaning": "a name; a legal right to property",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "property",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "proper",
+        "root_meaning": "own/one's own",
+        "suffix": "ty",
+        "suffix_meaning": "quality/state"
+      },
+      "true_meaning": "the quality of being one's own — that which belongs to you",
+      "apparent_meaning": "a thing or things belonging to someone",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "bond",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "bond",
+        "root_meaning": "bind/fetter/obligation",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "a binding — fettered obligation, a chain of debt",
+      "apparent_meaning": "a certificate of debt; a connection",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "security",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sec",
+        "root_meaning": "cut/separate",
+        "suffix": "ity",
+        "suffix_meaning": "quality/state"
+      },
+      "true_meaning": "the state of being cut off — separated from danger (or from freedom)",
+      "apparent_meaning": "the state of being free from danger; a financial instrument",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "authority",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "author",
+        "root_meaning": "originator/creator/one who augments",
+        "suffix": "ity",
+        "suffix_meaning": "quality/state"
+      },
+      "true_meaning": "the quality of authorship — one who creates the narrative",
+      "apparent_meaning": "the power to give orders or make decisions",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "court",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "court",
+        "root_meaning": "enclosed yard/dry dock (Latin cohors)",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "enclosed yard / dry dock — where vessels are inspected",
+      "apparent_meaning": "a place where justice is administered",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "bank",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "bank",
+        "root_meaning": "edge/ridge/river bank",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "river bank — that which directs the flow of current/currency",
+      "apparent_meaning": "a financial institution",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "person",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "per",
+        "prefix_meaning": "through/completely",
+        "root": "son",
+        "root_meaning": "sound",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "through sound only — an entity of voice, not substance",
+      "apparent_meaning": "a human being or individual",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "citizen",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "civ",
+        "root_meaning": "citizen/city",
+        "suffix": "en",
+        "suffix_meaning": "to make/made of"
+      },
+      "true_meaning": "citizen-SHIP — membership in a vessel/corporate entity",
+      "apparent_meaning": "a member of a state or nation",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "state",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "st",
+        "root_meaning": "",
+        "suffix": "ate",
+        "suffix_meaning": "to make/through/state"
+      },
+      "true_meaning": "st + (to make/through/state)",
+      "apparent_meaning": "common usage of 'state'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "nation",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "na",
+        "root_meaning": "",
+        "suffix": "tion",
+        "suffix_meaning": "contract/action/process"
+      },
+      "true_meaning": "na + (contract/action/process)",
+      "apparent_meaning": "common usage of 'nation'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "flag",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "flag",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "flag",
+      "apparent_meaning": "common usage of 'flag'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "seal",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "se",
+        "root_meaning": "",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "se + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'seal'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "post",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "pos",
+        "root_meaning": "place/put",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "place/put",
+      "apparent_meaning": "common usage of 'post'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "office",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "fic",
+        "root_meaning": "make/do/fiction",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + make/do/fiction",
+      "apparent_meaning": "common usage of 'office'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "document",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "doc",
+        "root_meaning": "teach",
+        "suffix": "ment",
+        "suffix_meaning": "mind/state/result of action"
+      },
+      "true_meaning": "teach + (mind/state/result of action)",
+      "apparent_meaning": "common usage of 'document'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "certificate",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "cert",
+        "root_meaning": "certain/sure",
+        "suffix": "ate",
+        "suffix_meaning": "to make/through/state"
+      },
+      "true_meaning": "made certain through process — certainty manufactured",
+      "apparent_meaning": "an official document of verification",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "register",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "reg",
+        "root_meaning": "king/rule/straight",
+        "suffix": "er",
+        "suffix_meaning": "one who/that which"
+      },
+      "true_meaning": "of the king — to place under the king's rule/record",
+      "apparent_meaning": "to officially record or enroll",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "account",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "ac",
+        "prefix_meaning": "toward (variant of ad-)",
+        "root": "count",
+        "root_meaning": "reckon/calculate",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "a reckoning toward — the tally of your vessel's cargo",
+      "apparent_meaning": "a record of financial transactions",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "name",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "name",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "name",
+      "apparent_meaning": "common usage of 'name'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "sign",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sign",
+        "root_meaning": "mark/seal",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "mark/seal",
+      "apparent_meaning": "common usage of 'sign'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "mark",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "mark",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "mark",
+      "apparent_meaning": "common usage of 'mark'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "stamp",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sta",
+        "root_meaning": "stand",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "stand",
+      "apparent_meaning": "common usage of 'stamp'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "record",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "ord",
+        "root_meaning": "order/rank",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "AGAIN/BACK + order/rank",
+      "apparent_meaning": "common usage of 'record'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "deed",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "ed",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + ed",
+      "apparent_meaning": "common usage of 'deed'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "warrant",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "warr",
+        "root_meaning": "",
+        "suffix": "ant",
+        "suffix_meaning": "one who/performing"
+      },
+      "true_meaning": "warr + (one who/performing)",
+      "apparent_meaning": "common usage of 'warrant'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "notice",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "not",
+        "root_meaning": "mark/know",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "mark/know",
+      "apparent_meaning": "common usage of 'notice'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "evidence",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "e",
+        "prefix_meaning": "out of",
+        "root": "vid",
+        "root_meaning": "see",
+        "suffix": "ence",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "OUT OF + see + (now-state/quality)",
+      "apparent_meaning": "common usage of 'evidence'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "witness",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "wit",
+        "root_meaning": "",
+        "suffix": "ness",
+        "suffix_meaning": "state/condition"
+      },
+      "true_meaning": "wit + (state/condition)",
+      "apparent_meaning": "common usage of 'witness'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "oath",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "ath",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + ath",
+      "apparent_meaning": "common usage of 'oath'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "jury",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "jur",
+        "root_meaning": "law/swear",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "law/swear",
+      "apparent_meaning": "common usage of 'jury'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "judge",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "jud",
+        "root_meaning": "judge/law",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "judge/law",
+      "apparent_meaning": "common usage of 'judge'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "magistrate",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "magist",
+        "root_meaning": "master/great",
+        "suffix": "ate",
+        "suffix_meaning": "to make/through/state"
+      },
+      "true_meaning": "one made master — a master of the maritime court",
+      "apparent_meaning": "a judicial officer",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "sheriff",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sheriff",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "sheriff",
+      "apparent_meaning": "common usage of 'sheriff'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "marshal",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "marsh",
+        "root_meaning": "",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "marsh + (pertaining to/of the kind)",
+      "apparent_meaning": "common usage of 'marshal'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "sovereign",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sover",
+        "root_meaning": "above/supreme",
+        "suffix": "eign",
+        "suffix_meaning": "rule/reign"
+      },
+      "true_meaning": "one who rules from above — supreme authority on the land",
+      "apparent_meaning": "a supreme ruler; possessing supreme power",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "constitution",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "con",
+        "prefix_meaning": "together/with",
+        "root": "stit",
+        "root_meaning": "stand/place",
+        "suffix": "tion",
+        "suffix_meaning": "contract/action/process"
+      },
+      "true_meaning": "standing together contract — the vessel's charter/articles",
+      "apparent_meaning": "the fundamental law of a state",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "statute",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "statu",
+        "root_meaning": "stand/set up/fixed",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "something set up / standing order — maritime ship's statute",
+      "apparent_meaning": "a written law passed by a legislature",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "jurisdiction",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "juris",
+        "root_meaning": "law/right",
+        "suffix": "tion",
+        "suffix_meaning": "contract/action/process"
+      },
+      "true_meaning": "law-speak-contract — the authority to say the law",
+      "apparent_meaning": "the official power to make legal decisions",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "mortgage",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "mort",
+        "root_meaning": "death",
+        "suffix": "age",
+        "suffix_meaning": "act/state/collection"
+      },
+      "true_meaning": "death-grip/death-pledge — a pledge unto death",
+      "apparent_meaning": "a loan secured by real property",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "currency",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "cur",
+        "root_meaning": "run/flow",
+        "suffix": "ency",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "the state of flowing — liquid value in maritime commerce",
+      "apparent_meaning": "money or medium of exchange",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "capital",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "capit",
+        "root_meaning": "head/chief/stock",
+        "suffix": "al",
+        "suffix_meaning": "pertaining to/of the kind"
+      },
+      "true_meaning": "pertaining to the head — head-count, human stock/chattel",
+      "apparent_meaning": "wealth, chief city, or uppercase letter",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "interest",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "inter",
+        "prefix_meaning": "between/among",
+        "root": "est",
+        "root_meaning": "to be (Latin esse)",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "being between — caught between two parties (inter-esse)",
+      "apparent_meaning": "a charge for borrowing money; a feeling of curiosity",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "credit",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "cred",
+        "root_meaning": "believe/trust",
+        "suffix": "it",
+        "suffix_meaning": "that which"
+      },
+      "true_meaning": "that which is believed — trust-based, not substance-based",
+      "apparent_meaning": "trust in a buyer's ability to pay; recognition",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "debit",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "deb",
+        "root_meaning": "owe",
+        "suffix": "it",
+        "suffix_meaning": "that which"
+      },
+      "true_meaning": "that which is owed — a debt instrument",
+      "apparent_meaning": "an entry recording an amount owed",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "sentence",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "ence",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "a thought/judgment AND a punishment — dual meaning by design",
+      "apparent_meaning": "a grammatical unit; a judicial punishment",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "charge",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "charge",
+        "root_meaning": "load/burden/cargo (Latin carricare)",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "to load cargo onto a vessel — maritime cargo loading",
+      "apparent_meaning": "an accusation; a fee; to load with energy",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "bar",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "bar",
+        "root_meaning": "barrier/rod/obstruction",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "barrier between land and sea jurisdiction — the BAR in court",
+      "apparent_meaning": "a barrier; the legal profession; a drinking establishment",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "dock",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "dock",
+        "root_meaning": "enclosed water for ships / to cut short",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "where vessels are berthed, inspected, and judged",
+      "apparent_meaning": "a structure for mooring ships; the accused's place in court",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "berth",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "berth",
+        "root_meaning": "place assigned to a ship at dock",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "a ship's assigned place — birth/berth certificate = dock assignment",
+      "apparent_meaning": "a sleeping place on a ship; a mooring spot",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "subject",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "sub",
+        "prefix_meaning": "under/below",
+        "root": "ject",
+        "root_meaning": "throw",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "thrown under — cast beneath authority",
+      "apparent_meaning": "a topic; one under the dominion of a monarch",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "opinion",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "pin",
+        "root_meaning": "write/fasten",
+        "suffix": "ion",
+        "suffix_meaning": "contract/action"
+      },
+      "true_meaning": "NO written contract — unfastened/unwritten claim",
+      "apparent_meaning": "a personal view or belief",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "agreement",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "gree",
+        "root_meaning": "step/grade",
+        "suffix": "ment",
+        "suffix_meaning": "mind/state/result of action"
+      },
+      "true_meaning": "NO step of mind — without graded mental assent",
+      "apparent_meaning": "a mutual understanding or arrangement",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "government",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "govern",
+        "root_meaning": "steer a ship",
+        "suffix": "ment",
+        "suffix_meaning": "mind/state/result of action"
+      },
+      "true_meaning": "steering of the mind — maritime piloting of thought",
+      "apparent_meaning": "the system of administration and authority",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "license",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "lic",
+        "root_meaning": "permission/be allowed",
+        "suffix": "ense",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "permission to do the otherwise illegal — state-granted allowance",
+      "apparent_meaning": "an official permit or authorization",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "insurance",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "in",
+        "prefix_meaning": "no/not",
+        "root": "sure",
+        "root_meaning": "certain/fixed/safe",
+        "suffix": "ance",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "NO certainty/NO safety — the state of having no surety",
+      "apparent_meaning": "protection or coverage against loss",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "commerce",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "com",
+        "prefix_meaning": "together/with",
+        "root": "merc",
+        "root_meaning": "trade/reward",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "trading together — exchange in maritime jurisdiction",
+      "apparent_meaning": "the activity of buying and selling",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "parliament",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "parli",
+        "root_meaning": "speak (French parler)",
+        "suffix": "ment",
+        "suffix_meaning": "mind/state/result of action"
+      },
+      "true_meaning": "the speaking-mind — a place of talk, not action",
+      "apparent_meaning": "a legislative body",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "attorney",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "at",
+        "prefix_meaning": "to/toward",
+        "root": "torn",
+        "root_meaning": "tear/twist",
+        "suffix": "ey",
+        "suffix_meaning": "one who (agent)"
+      },
+      "true_meaning": "one who tears apart — an agent of tearing/division",
+      "apparent_meaning": "a lawyer or legal representative",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "science",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sci",
+        "root_meaning": "know",
+        "suffix": "ence",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "the now-state of knowing — knowledge in present time",
+      "apparent_meaning": "systematic study of the natural world",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "body",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "body",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "body",
+      "apparent_meaning": "common usage of 'body'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "mind",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "mind",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "mind",
+      "apparent_meaning": "common usage of 'mind'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "spirit",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "spir",
+        "root_meaning": "breathe/spirit",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "breathe/spirit",
+      "apparent_meaning": "common usage of 'spirit'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "birth",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "bi",
+        "prefix_meaning": "two",
+        "root": "rth",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "TWO + rth",
+      "apparent_meaning": "common usage of 'birth'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "death",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "ath",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + ath",
+      "apparent_meaning": "common usage of 'death'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "water",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "wat",
+        "root_meaning": "",
+        "suffix": "er",
+        "suffix_meaning": "one who/that which"
+      },
+      "true_meaning": "wat + (one who/that which)",
+      "apparent_meaning": "common usage of 'water'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "current",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "cur",
+        "root_meaning": "run/flow",
+        "suffix": "ent",
+        "suffix_meaning": "one who/performing"
+      },
+      "true_meaning": "that which flows/runs — water current = money current",
+      "apparent_meaning": "present time / flow of water or electricity",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "port",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "port",
+        "root_meaning": "carry/gate/harbor",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "carry/gate/harbor",
+      "apparent_meaning": "common usage of 'port'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "harbor",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "harb",
+        "root_meaning": "",
+        "suffix": "or",
+        "suffix_meaning": "one who/that which"
+      },
+      "true_meaning": "harb + (one who/that which)",
+      "apparent_meaning": "common usage of 'harbor'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "ship",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "ship",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "ship",
+      "apparent_meaning": "common usage of 'ship'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "captain",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "tain",
+        "root_meaning": "hold/keep",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "hold/keep",
+      "apparent_meaning": "common usage of 'captain'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "master",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "mast",
+        "root_meaning": "",
+        "suffix": "er",
+        "suffix_meaning": "one who/that which"
+      },
+      "true_meaning": "mast + (one who/that which)",
+      "apparent_meaning": "common usage of 'master'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "slave",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "slave",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "slave",
+      "apparent_meaning": "common usage of 'slave'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "freedom",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "free",
+        "root_meaning": "",
+        "suffix": "dom",
+        "suffix_meaning": "domain/state/condition"
+      },
+      "true_meaning": "free + (domain/state/condition)",
+      "apparent_meaning": "common usage of 'freedom'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "liberty",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "liber",
+        "root_meaning": "free",
+        "suffix": "ty",
+        "suffix_meaning": "quality/state"
+      },
+      "true_meaning": "free + (quality/state)",
+      "apparent_meaning": "common usage of 'liberty'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "justice",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "just",
+        "root_meaning": "law/right",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "law/right",
+      "apparent_meaning": "common usage of 'justice'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "truth",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "truth",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "truth",
+      "apparent_meaning": "common usage of 'truth'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "fraud",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "aud",
+        "root_meaning": "hear",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "hear",
+      "apparent_meaning": "common usage of 'fraud'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "fiction",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fic",
+        "root_meaning": "make/do/fiction",
+        "suffix": "tion",
+        "suffix_meaning": "contract/action/process"
+      },
+      "true_meaning": "make/do/fiction + (contract/action/process)",
+      "apparent_meaning": "common usage of 'fiction'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "reality",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "al",
+        "root_meaning": "",
+        "suffix": "ity",
+        "suffix_meaning": "quality/state"
+      },
+      "true_meaning": "AGAIN/BACK + al + (quality/state)",
+      "apparent_meaning": "common usage of 'reality'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "substance",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "sub",
+        "prefix_meaning": "under/below",
+        "root": "st",
+        "root_meaning": "",
+        "suffix": "ance",
+        "suffix_meaning": "now-state/quality"
+      },
+      "true_meaning": "UNDER/BELOW + st + (now-state/quality)",
+      "apparent_meaning": "common usage of 'substance'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "form",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "form",
+        "root_meaning": "shape/structure",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "shape/structure",
+      "apparent_meaning": "common usage of 'form'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "action",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ct",
+        "root_meaning": "",
+        "suffix": "ion",
+        "suffix_meaning": "contract/action"
+      },
+      "true_meaning": "NO/WITHOUT + ct + (contract/action)",
+      "apparent_meaning": "common usage of 'action'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "cause",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "cause",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "cause",
+      "apparent_meaning": "common usage of 'cause'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "effect",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "e",
+        "prefix_meaning": "out of",
+        "root": "fect",
+        "root_meaning": "make/do",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "OUT OF + make/do",
+      "apparent_meaning": "common usage of 'effect'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "origin",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "o",
+        "prefix_meaning": "no/without",
+        "root": "rigin",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "NO/WITHOUT + rigin",
+      "apparent_meaning": "common usage of 'origin'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "source",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "source",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "source",
+      "apparent_meaning": "common usage of 'source'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "power",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "pow",
+        "root_meaning": "",
+        "suffix": "er",
+        "suffix_meaning": "one who/that which"
+      },
+      "true_meaning": "pow + (one who/that which)",
+      "apparent_meaning": "common usage of 'power'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "force",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "forc",
+        "root_meaning": "strong",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "strong",
+      "apparent_meaning": "common usage of 'force'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "will",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "will",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "will",
+      "apparent_meaning": "common usage of 'will'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "consent",
+      "role": "NOUN",
+      "position": 4,
+      "position_description": "Fact-carrier — the primary vessel of meaning",
+      "decomposition": {
+        "prefix": "con",
+        "prefix_meaning": "together/with",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "TOGETHER/WITH + feel/think",
+      "apparent_meaning": "common usage of 'consent'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "claiming",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "claim",
+        "root_meaning": "cry out/demand",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "cry out/demand + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'claiming'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "standing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "stand",
+        "root_meaning": "stand/endure",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "stand/endure + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'standing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "living",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "liv",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "liv + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'living'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "writing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "writ",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "writ + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'writing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "speaking",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "speak",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "speak + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'speaking'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "signing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sign",
+        "root_meaning": "mark/seal",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "mark/seal + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'signing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "sealing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "seal",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "seal + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'sealing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "delivering",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "ver",
+        "root_meaning": "turn",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + turn + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'delivering'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "posting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "post",
+        "prefix_meaning": "after",
+        "root": "ing",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "AFTER + ing",
+      "apparent_meaning": "common usage of 'posting'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "recording",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "ord",
+        "root_meaning": "order/rank",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "AGAIN/BACK + order/rank + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'recording'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "filing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fil",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "fil + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'filing'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "noticing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "not",
+        "root_meaning": "mark/know",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "mark/know + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'noticing'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "witnessing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "witness",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "witness + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'witnessing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "bonding",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "bond",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "bond + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'bonding'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "securing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sec",
+        "root_meaning": "cut/separate",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "cut/separate + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'securing'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "holding",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "hold",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "hold + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'holding'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "carrying",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "carry",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "carry + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'carrying'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "moving",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "mov",
+        "root_meaning": "move",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "move + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'moving'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "creating",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "creat",
+        "root_meaning": "make/grow",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "make/grow + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'creating'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "destroying",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "stroy",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + stroy + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'destroying'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "charging",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "charg",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "charg + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'charging'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "discharging",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "dis",
+        "prefix_meaning": "apart/away/not",
+        "root": "charg",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "APART/AWAY/NOT + charg + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'discharging'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "appearing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ppear",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "NO/WITHOUT + ppear + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'appearing'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "presenting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "pre",
+        "prefix_meaning": "before",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "BEFORE + feel/think + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'presenting'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "representing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "AGAIN/BACK + feel/think + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'representing'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "contracting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "con",
+        "prefix_meaning": "together/with",
+        "root": "tract",
+        "root_meaning": "pull/draw",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "TOGETHER/WITH + pull/draw + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'contracting'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "agreeing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "gree",
+        "root_meaning": "step/grade",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "NO/WITHOUT + step/grade + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'agreeing'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "consenting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "con",
+        "prefix_meaning": "together/with",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "TOGETHER/WITH + feel/think + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'consenting'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "objecting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "ob",
+        "prefix_meaning": "against/toward",
+        "root": "ject",
+        "root_meaning": "throw",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "AGAINST/TOWARD + throw + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'objecting'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "protesting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "pro",
+        "prefix_meaning": "forward/for",
+        "root": "test",
+        "root_meaning": "witness/prove",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "FORWARD/FOR + witness/prove + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'protesting'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "establishing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "e",
+        "prefix_meaning": "out of",
+        "root": "sta",
+        "root_meaning": "stand",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "OUT OF + stand + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'establishing'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "maintaining",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "tain",
+        "root_meaning": "hold/keep",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "hold/keep + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'maintaining'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "operating",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "op",
+        "prefix_meaning": "against (before p)",
+        "root": "erat",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "AGAINST (BEFORE P) + erat + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'operating'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "governing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "govern",
+        "root_meaning": "steer a ship",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "steer a ship + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'governing'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "judging",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "jud",
+        "root_meaning": "judge/law",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "judge/law + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'judging'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "executing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "ex",
+        "prefix_meaning": "out of/former",
+        "root": "ecut",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "OUT OF/FORMER + ecut + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'executing'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "sentencing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "sent",
+        "root_meaning": "feel/think",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "feel/think + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'sentencing'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "binding",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "bi",
+        "prefix_meaning": "two",
+        "root": "nd",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "TWO + nd + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'binding'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "freeing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "free",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "free + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'freeing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "releasing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "leas",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "AGAIN/BACK + leas + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'releasing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "granting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "grant",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "grant + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'granting'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "revoking",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "re",
+        "prefix_meaning": "again/back",
+        "root": "vok",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "AGAIN/BACK + vok + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'revoking'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "amending",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "mend",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "NO/WITHOUT + mend + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'amending'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "ratifying",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "ratify",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "ratify + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'ratifying'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "affirming",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ffirm",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "NO/WITHOUT + ffirm + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'affirming'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "denying",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "ny",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + ny + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'denying'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "asserting",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "as",
+        "prefix_meaning": "no/without",
+        "root": "sert",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "NO/WITHOUT + sert + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'asserting'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "declaring",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "de",
+        "prefix_meaning": "down/from/reverse",
+        "root": "clar",
+        "root_meaning": "clear",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "DOWN/FROM/REVERSE + clear + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'declaring'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "publishing",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "publish",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "publish + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'publishing'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "certifying",
+      "role": "VERB_GERUND",
+      "position": 5,
+      "position_description": "Action in now-time — must be in -ING gerund form",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "certify",
+        "root_meaning": "",
+        "suffix": "ing",
+        "suffix_meaning": "now-time/living/present action"
+      },
+      "true_meaning": "certify + (now-time/living/present action)",
+      "apparent_meaning": "common usage of 'certifying'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "now",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "now",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "now",
+      "apparent_meaning": "common usage of 'now'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "here",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "here",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "here",
+      "apparent_meaning": "common usage of 'here'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "thereby",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "thereby",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "thereby",
+      "apparent_meaning": "common usage of 'thereby'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "hereby",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "hereby",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "hereby",
+      "apparent_meaning": "common usage of 'hereby'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "wherein",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "wherein",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "wherein",
+      "apparent_meaning": "common usage of 'wherein'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "thereof",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "thereof",
+        "root_meaning": "",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "thereof",
+      "apparent_meaning": "common usage of 'thereof'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "forthwith",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fort",
+        "root_meaning": "strong",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "strong",
+      "apparent_meaning": "common usage of 'forthwith'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "henceforth",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fort",
+        "root_meaning": "strong",
+        "suffix": "",
+        "suffix_meaning": ""
+      },
+      "true_meaning": "strong",
+      "apparent_meaning": "common usage of 'henceforth'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "lawfully",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "lawful",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "lawful + (in the manner of)",
+      "apparent_meaning": "common usage of 'lawfully'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "legally",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "leg",
+        "root_meaning": "read/law/choose",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "read/law/choose + (in the manner of)",
+      "apparent_meaning": "common usage of 'legally'",
+      "jurisdiction": "sea/water",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "correctly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "cor",
+        "prefix_meaning": "together (before r)",
+        "root": "rect",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "TOGETHER (BEFORE R) + rect + (in the manner of)",
+      "apparent_meaning": "common usage of 'correctly'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "voluntarily",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "voluntari",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "voluntari + (in the manner of)",
+      "apparent_meaning": "common usage of 'voluntarily'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "knowingly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "knowing",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "knowing + (in the manner of)",
+      "apparent_meaning": "common usage of 'knowingly'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "willingly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "ling",
+        "root_meaning": "tongue/language",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "tongue/language + (in the manner of)",
+      "apparent_meaning": "common usage of 'willingly'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "freely",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "free",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "free + (in the manner of)",
+      "apparent_meaning": "common usage of 'freely'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "directly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "direct",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "direct + (in the manner of)",
+      "apparent_meaning": "common usage of 'directly'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "properly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "pro",
+        "prefix_meaning": "forward/for",
+        "root": "per",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "FORWARD/FOR + per + (in the manner of)",
+      "apparent_meaning": "common usage of 'properly'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "actually",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "a",
+        "prefix_meaning": "no/without",
+        "root": "ctual",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "NO/WITHOUT + ctual + (in the manner of)",
+      "apparent_meaning": "common usage of 'actually'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": true
+    },
+    {
+      "word": "truly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "tru",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "tru + (in the manner of)",
+      "apparent_meaning": "common usage of 'truly'",
+      "jurisdiction": "land/soil",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "falsely",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "fa",
+        "root_meaning": "speak",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "speak + (in the manner of)",
+      "apparent_meaning": "common usage of 'falsely'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "publicly",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "public",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "public + (in the manner of)",
+      "apparent_meaning": "common usage of 'publicly'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "privately",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "private",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "private + (in the manner of)",
+      "apparent_meaning": "common usage of 'privately'",
+      "jurisdiction": "unclassified",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "formally",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "form",
+        "root_meaning": "shape/structure",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "shape/structure + (in the manner of)",
+      "apparent_meaning": "common usage of 'formally'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "materially",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "",
+        "prefix_meaning": "",
+        "root": "material",
+        "root_meaning": "",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "material + (in the manner of)",
+      "apparent_meaning": "common usage of 'materially'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    },
+    {
+      "word": "substantially",
+      "role": "ADVERB",
+      "position": 6,
+      "position_description": "Modifier of the verb — says nothing alone",
+      "decomposition": {
+        "prefix": "sub",
+        "prefix_meaning": "under/below",
+        "root": "sta",
+        "root_meaning": "stand",
+        "suffix": "ly",
+        "suffix_meaning": "in the manner of"
+      },
+      "true_meaning": "UNDER/BELOW + stand + (in the manner of)",
+      "apparent_meaning": "common usage of 'substantially'",
+      "jurisdiction": "air/ether",
+      "now_time_valid": true,
+      "negated": false
+    }
+  ]
+}
