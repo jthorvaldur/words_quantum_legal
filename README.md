@@ -1,4 +1,6 @@
-# words_quantum_legal
+# Quantum Verbal Meaning — Parse-Syntax Analysis for Legal Language
+
+Correct-Sentence-Structure-Communication-Parse-Syntax-Grammar-Performance (C.S.S.C.P.S.G.P.) analysis toolkit for legal and contractual language.
 
 Computational framework for analyzing English words, sentences, and legal documents
 through the lens of **Correct-Sentence-Structure-Communication-Parse-Syntax-Grammar-Performance**
@@ -144,6 +146,32 @@ python src/basis_map_viz.py
 
 ---
 
+## Visualizations
+
+15 interactive HTML pages (deployed encrypted to jthorvaldur.github.io/r/qwl/):
+
+| Page | Description |
+|------|-------------|
+| meta_pattern.html | The four-step authority pattern across 6 domains |
+| four_step_audit.html | Step-by-step audit tool |
+| domain_decomposer.html | Cross-domain decomposition |
+| parse_syntax_tree.html | Sentence parse trees |
+| basis_constellation.html | 720-word basis set constellation map |
+| word_decomposer.html | Morpheme decomposition |
+| dog_latin_scanner.html | DOG-LATIN detection |
+| jurisdiction_layers.html | Jurisdiction layer analysis |
+| justinian_timeline.html | Justinian Corpus Juris Civilis timeline |
+| maritime_box_flow.html | Maritime/admiralty box flow |
+| vcc_negation_space.html | VCC negation space |
+| filing_comparison.html | Before/after filing comparison |
+| filing_dashboard.html | Filing analysis dashboard |
+| summary.html | Key findings and next steps |
+| about.html | Framework documentation |
+
+Visualizations are encrypted and deployed via `tools/encrypt_pages.mjs`. See the parent site's ENCRYPTION_PROCESS.md for details.
+
+---
+
 ## Key Concepts
 
 | Concept | Description |
@@ -177,12 +205,33 @@ words_quantum_legal/
 ├── data/
 │   ├── basis_720.json           # Generated 720-word basis (run basis_generator.py)
 │   ├── basis_map.html           # Generated HTML visualization (run basis_map_viz.py)
+│   ├── filing_analysis.json     # Filing analysis data
+│   ├── filing_analysis.md       # Filing analysis writeup
 │   └── parse_rules.json         # C.S.S.C.P.S.G.P. rules
 ├── docs/
 │   ├── justinian_timeline.md    # Justinian hijack of time
 │   ├── maritime_box.md          # Birth-to-court metaphor
 │   ├── lawful_vs_legal.md       # Jurisdiction taxonomy
 │   └── word_decomposition.md    # Case/hyphen mechanics
+├── tools/
+│   ├── batch_evaluate.py        # Batch document evaluation
+│   └── encrypt_pages.mjs        # Encrypt viz pages for deployment
+├── viz/
+│   ├── about.html               # Framework documentation
+│   ├── basis_constellation.html # 720-word basis constellation map
+│   ├── dog_latin_scanner.html   # DOG-LATIN detection
+│   ├── domain_decomposer.html   # Cross-domain decomposition
+│   ├── filing_comparison.html   # Before/after filing comparison
+│   ├── filing_dashboard.html    # Filing analysis dashboard
+│   ├── four_step_audit.html     # Step-by-step audit tool
+│   ├── jurisdiction_layers.html # Jurisdiction layer analysis
+│   ├── justinian_timeline.html  # Justinian Corpus Juris Civilis timeline
+│   ├── maritime_box_flow.html   # Maritime/admiralty box flow
+│   ├── meta_pattern.html        # Four-step authority pattern
+│   ├── parse_syntax_tree.html   # Sentence parse trees
+│   ├── summary.html             # Key findings and next steps
+│   ├── vcc_negation_space.html  # VCC negation space
+│   └── word_decomposer.html     # Morpheme decomposition
 └── src/
     ├── basis_generator.py       # Generate 720-word basis
     ├── word_parser.py           # Parse any word
