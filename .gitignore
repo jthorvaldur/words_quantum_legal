@@ -1,3 +1,27 @@
+# env
+.env
+.env.*
+!.env.example
+!.env.schema
+
+# local agent context
+CLAUDE.local.md
+AGENTS.local.md
+CODEX.local.md
+*.local.md
+
+# secrets
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+service_account*.json
+credentials.json
+token.json
+
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -8,3 +32,11 @@ wheels/
 
 # Virtual environments
 .venv
+
+# editors
+.DS_Store
+.idea/
+.vscode/*
+
+# control plane local state
+.control/local/

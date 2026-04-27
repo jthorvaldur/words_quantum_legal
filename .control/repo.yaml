@@ -1,0 +1,36 @@
+name: words_quantum_legal
+language:
+  primary: python
+  secondary:
+    - html
+    - javascript
+
+category: legal
+owner: joel
+visibility: public
+
+uses:
+  vector_db: true
+  llm_agents: true
+  web_publish: true
+  github_actions: false
+
+allowed_llm_providers:
+  - anthropic
+  - local_ollama
+
+required_files:
+  - INTENT.md
+  - README.md
+  - CLAUDE.md
+  - .env.example
+  - .gitignore
+
+forbidden_files:
+  - .env
+  - secrets.json
+  - id_rsa
+  - service_account.json
+
+update_hooks:
+  docs: scripts/docs.sh
