@@ -148,27 +148,27 @@ python src/basis_map_viz.py
 
 ## Visualizations
 
-15 interactive HTML pages (deployed encrypted to jthorvaldur.github.io/r/qwl/):
+15 interactive HTML pages, live at [jthorvaldur.github.io/r/qwl/](https://jthorvaldur.github.io/r/qwl/):
 
-| Page | Description |
-|------|-------------|
-| meta_pattern.html | The four-step authority pattern across 6 domains |
-| four_step_audit.html | Step-by-step audit tool |
-| domain_decomposer.html | Cross-domain decomposition |
-| parse_syntax_tree.html | Sentence parse trees |
-| basis_constellation.html | 720-word basis set constellation map |
-| word_decomposer.html | Morpheme decomposition |
-| dog_latin_scanner.html | DOG-LATIN detection |
-| jurisdiction_layers.html | Jurisdiction layer analysis |
-| justinian_timeline.html | Justinian Corpus Juris Civilis timeline |
-| maritime_box_flow.html | Maritime/admiralty box flow |
-| vcc_negation_space.html | VCC negation space |
-| filing_comparison.html | Before/after filing comparison |
-| filing_dashboard.html | Filing analysis dashboard |
-| summary.html | Key findings and next steps |
-| about.html | Framework documentation |
+| Page | Description | Link |
+|------|-------------|------|
+| meta_pattern.html | The four-step authority pattern across 6 domains | [view](https://jthorvaldur.github.io/r/qwl/meta_pattern.html) |
+| four_step_audit.html | Step-by-step audit tool | [view](https://jthorvaldur.github.io/r/qwl/four_step_audit.html) |
+| domain_decomposer.html | Cross-domain decomposition | [view](https://jthorvaldur.github.io/r/qwl/domain_decomposer.html) |
+| parse_syntax_tree.html | Sentence parse trees | [view](https://jthorvaldur.github.io/r/qwl/parse_syntax_tree.html) |
+| basis_constellation.html | 720-word basis set constellation map | [view](https://jthorvaldur.github.io/r/qwl/basis_constellation.html) |
+| word_decomposer.html | Morpheme decomposition | [view](https://jthorvaldur.github.io/r/qwl/word_decomposer.html) |
+| dog_latin_scanner.html | DOG-LATIN detection | [view](https://jthorvaldur.github.io/r/qwl/dog_latin_scanner.html) |
+| jurisdiction_layers.html | Jurisdiction layer analysis | [view](https://jthorvaldur.github.io/r/qwl/jurisdiction_layers.html) |
+| justinian_timeline.html | Justinian Corpus Juris Civilis timeline | [view](https://jthorvaldur.github.io/r/qwl/justinian_timeline.html) |
+| maritime_box_flow.html | Maritime/admiralty box flow | [view](https://jthorvaldur.github.io/r/qwl/maritime_box_flow.html) |
+| vcc_negation_space.html | VCC negation space | [view](https://jthorvaldur.github.io/r/qwl/vcc_negation_space.html) |
+| filing_comparison.html | Before/after filing comparison | [view](https://jthorvaldur.github.io/r/qwl/filing_comparison.html) |
+| filing_dashboard.html | Filing analysis dashboard | [view](https://jthorvaldur.github.io/r/qwl/filing_dashboard.html) |
+| summary.html | Key findings and next steps | [view](https://jthorvaldur.github.io/r/qwl/summary.html) |
+| about.html | Framework documentation | [view](https://jthorvaldur.github.io/r/qwl/about.html) |
 
-Visualizations are encrypted and deployed via `tools/encrypt_pages.mjs`. See the parent site's ENCRYPTION_PROCESS.md for details.
+Source HTML is in `viz/`. Deployed to GitHub Pages via the main site repo.
 
 ---
 
