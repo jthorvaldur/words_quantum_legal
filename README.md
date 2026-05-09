@@ -242,3 +242,7 @@ words_quantum_legal/
     ├── case_analyzer.py         # Case/hyphen jurisdiction
     └── basis_map_viz.py         # HTML basis map generator
 ```
+
+<!-- AUTO:footer -->
+Managed by [policy-orchestrator](https://github.com/jthorvaldur/policy-orchestrator). Category: legal. 12 commits, last updated 6 days ago.
+<!-- /AUTO:footer -->
