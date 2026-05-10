@@ -1007,30 +1007,60 @@ def cmd_draft(args):
     else:
         print(f"\n  {c('dim')}No [CITE NEEDED] markers to fill.{c('reset')}", file=out)
 
-    # ── Phase 5: Final re-scan ────────────────────────────────────
+    # ── Phase 5: Final score (dual metrics) ─────────────────────
+    from effectiveness import score_effectiveness, format_effectiveness
+
     print(f"\n  {c('bold')}PHASE 5: FINAL SCORE{c('reset')}", file=out)
     print(f"  {c('dim')}{'─' * 50}{c('reset')}", file=out)
+
+    # Parse-syntax score (structural purity)
     final_result = evaluate_document(current_doc, f"{title} (final)")
     gc2 = grade_color(final_result["overall_grade"])
     sc2 = score_color(final_result["overall_score"])
     delta = final_result["overall_score"] - result["overall_score"]
     delta_str = f"+{delta}" if delta > 0 else str(delta)
     delta_color = c("green") if delta > 0 else c("red") if delta < 0 else c("dim")
-    print(f"  Original:  {sc}{result['overall_score']}/100{c('reset')} "
+
+    # Effectiveness scores (practical quality)
+    eff_orig = score_effectiveness(text)
+    eff_final = score_effectiveness(current_doc, text)
+    eff_delta = eff_final.total - eff_orig.total
+    eff_delta_str = f"+{eff_delta}" if eff_delta > 0 else str(eff_delta)
+    eff_delta_color = c("green") if eff_delta > 0 else c("red") if eff_delta < 0 else c("dim")
+
+    print(f"\n  {c('bold')}Parse-Syntax (CSSCPSGP structural purity){c('reset')}", file=out)
+    print(f"    Original:  {sc}{result['overall_score']}/100{c('reset')} "
           f"({gc}{result['overall_grade']}{c('reset')})", file=out)
-    print(f"  Final:     {sc2}{final_result['overall_score']}/100{c('reset')} "
+    print(f"    Final:     {sc2}{final_result['overall_score']}/100{c('reset')} "
           f"({gc2}{final_result['overall_grade']}{c('reset')})", file=out)
-    print(f"  Delta:     {delta_color}{delta_str}{c('reset')}", file=out)
+    print(f"    Delta:     {delta_color}{delta_str}{c('reset')}", file=out)
+
+    eff_gc = c("green") if eff_final.grade in ("A", "B") else c("yellow") if eff_final.grade == "C" else c("red")
+    eff_gc_o = c("green") if eff_orig.grade in ("A", "B") else c("yellow") if eff_orig.grade == "C" else c("red")
+    print(f"\n  {c('bold')}Effectiveness (practical document quality){c('reset')}", file=out)
+    print(f"    Original:  {eff_gc_o}{eff_orig.total}/100{c('reset')} "
+          f"({eff_gc_o}{eff_orig.grade}{c('reset')})", file=out)
+    print(f"    Final:     {eff_gc}{eff_final.total}/100{c('reset')} "
+          f"({eff_gc}{eff_final.grade}{c('reset')})", file=out)
+    print(f"    Delta:     {eff_delta_color}{eff_delta_str}{c('reset')}", file=out)
+
+    # Show dimension breakdown for final
+    print(f"\n{format_effectiveness(eff_final)}", file=out)
 
     # ── Output ────────────────────────────────────────────────────
     if args.json:
         print(json.dumps({
             "title": title,
-            "original_score": result["overall_score"],
-            "original_grade": result["overall_grade"],
-            "final_score": final_result["overall_score"],
-            "final_grade": final_result["overall_grade"],
-            "delta": delta,
+            "parse_syntax": {
+                "original": result["overall_score"],
+                "final": final_result["overall_score"],
+                "delta": delta,
+            },
+            "effectiveness": {
+                "original": eff_orig.to_dict(),
+                "final": eff_final.to_dict(),
+                "delta": eff_delta,
+            },
             "model": model_id,
             "passes": passes,
             "citations_remaining": current_doc.count("[CITE NEEDED"),
