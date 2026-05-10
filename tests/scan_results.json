@@ -1,0 +1,65 @@
+[
+  {
+    "title": "correct_form.md",
+    "overall_score": 61,
+    "overall_grade": "C",
+    "jurisdiction": "Maritime / Admiralty (Sea) — Dead / Corporate",
+    "dog_latin_pct": 56.4,
+    "null_chain_count": 0,
+    "findings": [
+      "Document is 56% DOG-LATIN — predominantly addresses corporate fictions / dead entities.",
+      "JURISDICTION MIXING detected — DOG-LATIN and English on the same document. Per Chicago Manual of Styles Art. 11:147, creates a jurisdictional void.",
+      "Contains past tense markers — past tense = dead time = fiction. Cannot contract with the dead.",
+      "Contains modal/future verbs (SHALL, WILL, WOULD, etc.) — future tense = fiction. Cannot contract with what hasn't happened."
+    ],
+    "recommendations": [
+      "Replace all DOG-LATIN (unhyphenated all-caps) with either English proper nouns or parse-syntax correct :Colon-Hyphen: forms.",
+      "A document must use ONE consistent jurisdiction. Choose either parse-syntax (:Colon-Hyphen:) or English, never DOG-LATIN.",
+      "Convert all past tense to now-time gerund (-ING) form.",
+      "Remove all modal verbs. State facts in now-time: 'FOR THE CLAIMING...' not 'shall claim...'"
+    ]
+  },
+  {
+    "title": "court_order.md",
+    "overall_score": 37,
+    "overall_grade": "F",
+    "jurisdiction": "MIXED / VOID — jurisdictional conflict",
+    "dog_latin_pct": 23.7,
+    "null_chain_count": 10,
+    "findings": [
+      "Document contains 24% DOG-LATIN — addresses corporate fiction alongside living text.",
+      "Found 10 null adverb-verb chain(s) — these constructions convey ZERO facts.",
+      "JURISDICTION MIXING detected — DOG-LATIN and English on the same document. Per Chicago Manual of Styles Art. 11:147, creates a jurisdictional void.",
+      "Contains past tense markers — past tense = dead time = fiction. Cannot contract with the dead.",
+      "Contains modal/future verbs (SHALL, WILL, WOULD, etc.) — future tense = fiction. Cannot contract with what hasn't happened.",
+      "Contains pronouns — pronouns REMOVE the fact. 'He shall pay' — WHO is 'he'? No fact established."
+    ],
+    "recommendations": [
+      "Replace adverb-verb chains with noun-fact constructions. A sentence without nouns carries no facts.",
+      "A document must use ONE consistent jurisdiction. Choose either parse-syntax (:Colon-Hyphen:) or English, never DOG-LATIN.",
+      "Convert all past tense to now-time gerund (-ING) form.",
+      "Remove all modal verbs. State facts in now-time: 'FOR THE CLAIMING...' not 'shall claim...'",
+      "Replace all pronouns with actual nouns/names."
+    ]
+  },
+  {
+    "title": "legal_email.md",
+    "overall_score": 68,
+    "overall_grade": "C",
+    "jurisdiction": "MIXED / VOID — jurisdictional conflict",
+    "dog_latin_pct": 0.8,
+    "null_chain_count": 0,
+    "findings": [
+      "JURISDICTION MIXING detected — DOG-LATIN and English on the same document. Per Chicago Manual of Styles Art. 11:147, creates a jurisdictional void.",
+      "Contains past tense markers — past tense = dead time = fiction. Cannot contract with the dead.",
+      "Contains modal/future verbs (SHALL, WILL, WOULD, etc.) — future tense = fiction. Cannot contract with what hasn't happened.",
+      "Contains pronouns — pronouns REMOVE the fact. 'He shall pay' — WHO is 'he'? No fact established."
+    ],
+    "recommendations": [
+      "A document must use ONE consistent jurisdiction. Choose either parse-syntax (:Colon-Hyphen:) or English, never DOG-LATIN.",
+      "Convert all past tense to now-time gerund (-ING) form.",
+      "Remove all modal verbs. State facts in now-time: 'FOR THE CLAIMING...' not 'shall claim...'",
+      "Replace all pronouns with actual nouns/names."
+    ]
+  }
+]

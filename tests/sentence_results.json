@@ -1,0 +1,128 @@
+{
+  "original": "IT IS HEREBY ORDERED AND ADJUDGED that the defendant shall forthwith pay",
+  "tokens": [
+    "IT",
+    "IS",
+    "HEREBY",
+    "ORDERED",
+    "AND",
+    "ADJUDGED",
+    "that",
+    "the",
+    "defendant",
+    "shall",
+    "forthwith",
+    "pay"
+  ],
+  "pos_tags": [
+    [
+      "IT",
+      "PRONOUN"
+    ],
+    [
+      "IS",
+      "VERB"
+    ],
+    [
+      "HEREBY",
+      "LEGAL_ADVERB"
+    ],
+    [
+      "ORDERED",
+      "PAST_VERB"
+    ],
+    [
+      "AND",
+      "CONJUNCTION"
+    ],
+    [
+      "ADJUDGED",
+      "PAST_VERB"
+    ],
+    [
+      "that",
+      "PRONOUN"
+    ],
+    [
+      "the",
+      "ARTICLE"
+    ],
+    [
+      "defendant",
+      "NOUN"
+    ],
+    [
+      "shall",
+      "MODAL_VERB"
+    ],
+    [
+      "forthwith",
+      "LEGAL_ADVERB"
+    ],
+    [
+      "pay",
+      "VERB"
+    ]
+  ],
+  "starts_with_preposition": false,
+  "valid_preposition": false,
+  "noun_count": 1,
+  "has_gerund_verbs": false,
+  "has_past_tense": true,
+  "has_future_tense": true,
+  "has_null_chain": true,
+  "null_chains": [
+    [
+      [
+        "IS",
+        "VERB"
+      ],
+      [
+        "HEREBY",
+        "LEGAL_ADVERB"
+      ],
+      [
+        "ORDERED",
+        "PAST_VERB"
+      ]
+    ],
+    [
+      [
+        "shall",
+        "MODAL_VERB"
+      ],
+      [
+        "forthwith",
+        "LEGAL_ADVERB"
+      ],
+      [
+        "pay",
+        "VERB"
+      ]
+    ]
+  ],
+  "has_pronouns": true,
+  "has_closure": false,
+  "score": 0,
+  "grade": "F",
+  "issues": [
+    "Does not begin with a prepositional phrase",
+    "Only one noun — minimal fact content",
+    "No gerund (-ING) verbs — not in now-time",
+    "Contains past tense (dead time = fiction)",
+    "Contains modal/future verbs (SHALL, WILL, etc. = fiction)",
+    "Null adverb-verb chain(s) detected: IS HEREBY ORDERED; shall forthwith pay",
+    "Contains pronouns (it, that) — facts removed",
+    "No proper closure — incomplete thought"
+  ],
+  "corrections": [
+    "Begin sentence with a valid preposition: FOR, BY, OF, WITH, IN, AGAINST",
+    "Add additional nouns to establish complete facts",
+    "Convert verbs to gerund form (-ING) for now-time validity",
+    "Remove past tense markers (-ED, WAS, WERE, HAD); use gerund form",
+    "Remove modal verbs; state facts in now-time gerund form",
+    "Remove adverb-verb chains; replace with noun-fact constructions",
+    "Replace all pronouns with actual nouns/names",
+    "Ensure sentence has prepositional grounding and noun anchors"
+  ]
+}

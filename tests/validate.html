@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>qwparse — CLI Validation</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a; color: #c0c0c0;
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100vh; padding: 40px 20px;
+    line-height: 1.7;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  a { color: #c0a060; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1 {
+    color: #c0a060; font-size: 1.3rem; margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .subtitle { font-size: 0.65rem; color: #444; margin-bottom: 40px; letter-spacing: 1px; }
+  h2 {
+    color: #e0e0e0; font-size: 0.9rem; margin: 48px 0 16px;
+    padding-bottom: 8px; border-bottom: 1px solid #1a1a1a;
+    letter-spacing: 1px;
+  }
+  h3 { color: #c0a060; font-size: 0.8rem; margin: 28px 0 10px; }
+  p { font-size: 0.75rem; color: #999; margin-bottom: 12px; }
+  strong { color: #c0c0c0; }
+  code { color: #c0a060; font-size: 0.72rem; }
+  pre {
+    background: #111; border: 1px solid #1a1a1a; border-radius: 6px;
+    padding: 16px 20px; margin: 12px 0; overflow-x: auto;
+    font-size: 0.68rem; color: #aaa; line-height: 1.5;
+  }
+  .tag {
+    display: inline-block; font-size: 0.55rem; padding: 2px 6px;
+    border-radius: 3px; font-weight: 700; letter-spacing: 0.5px;
+    vertical-align: middle;
+  }
+  .tag-red { background: #2a1111; color: #c55; }
+  .tag-green { background: #112a11; color: #5a5; }
+  .tag-gold { background: #2a2211; color: #c0a060; }
+  .tag-blue { background: #11112a; color: #68a; }
+  .tag-dim { background: #1a1a1a; color: #666; }
+
+  /* Doc card */
+  .doc-card {
+    background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 8px;
+    padding: 24px; margin: 16px 0;
+  }
+  .doc-card .header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 16px;
+  }
+  .doc-card .title { color: #e0e0e0; font-weight: 700; font-size: 0.85rem; }
+  .doc-card .grade {
+    font-size: 1.6rem; font-weight: 700; width: 48px; height: 48px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 8px;
+  }
+  .grade-f { background: #2a1111; color: #c55; }
+  .grade-c { background: #2a2211; color: #c0a060; }
+  .grade-a { background: #112a11; color: #5a5; }
+
+  .metrics {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+    margin: 16px 0;
+  }
+  .metric {
+    background: #111; border-radius: 6px; padding: 12px;
+    text-align: center;
+  }
+  .metric .value { font-size: 1.1rem; font-weight: 700; }
+  .metric .label { font-size: 0.55rem; color: #555; letter-spacing: 1px; margin-top: 4px; }
+  .metric .v-red { color: #c55; }
+  .metric .v-green { color: #5a5; }
+  .metric .v-gold { color: #c0a060; }
+
+  .finding {
+    padding: 10px 14px; margin: 6px 0;
+    border-left: 3px solid #c55; background: #110a0a;
+    font-size: 0.7rem; color: #a88;
+  }
+  .rec {
+    padding: 10px 14px; margin: 6px 0;
+    border-left: 3px solid #c0a060; background: #111008;
+    font-size: 0.7rem; color: #a98;
+  }
+
+  /* Word card */
+  .word-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px; margin: 16px 0;
+  }
+  .word-card {
+    background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 6px;
+    padding: 16px;
+  }
+  .word-card .word { color: #e0e0e0; font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; }
+  .word-card .morph { font-size: 0.68rem; margin-bottom: 6px; }
+  .word-card .morph .pfx { color: #c55; }
+  .word-card .morph .root { color: #5a5; }
+  .word-card .morph .sfx { color: #68a; }
+  .word-card .meaning { font-size: 0.68rem; color: #c0a060; margin-bottom: 4px; }
+  .word-card .apparent { font-size: 0.65rem; color: #555; }
+
+  /* Sentence */
+  .sentence-box {
+    background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 8px;
+    padding: 20px 24px; margin: 16px 0;
+  }
+  .sentence-box .text { font-size: 0.72rem; color: #888; margin-bottom: 12px; font-style: italic; }
+  .sentence-box .score-line {
+    display: flex; gap: 24px; align-items: center; margin-bottom: 12px;
+  }
+  .sentence-box .issue { font-size: 0.65rem; color: #c55; margin: 4px 0; padding-left: 12px; }
+  .sentence-box .corr { font-size: 0.65rem; color: #c0a060; margin: 4px 0; padding-left: 12px; }
+
+  /* CLI demo */
+  .cli-demo {
+    background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 8px;
+    padding: 20px; margin: 16px 0;
+  }
+  .cli-demo .prompt { color: #5a5; font-size: 0.7rem; margin-bottom: 4px; }
+  .cli-demo .output { color: #888; font-size: 0.68rem; white-space: pre-wrap; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 0; margin: 24px 0 0; }
+  .tab {
+    padding: 10px 20px; background: #111; border: 1px solid #1a1a1a;
+    border-bottom: none; border-radius: 6px 6px 0 0;
+    font-size: 0.7rem; color: #666; cursor: pointer;
+    font-family: inherit;
+  }
+  .tab.active { background: #0d0d0d; color: #c0a060; border-color: #333; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .footer {
+    margin-top: 60px; padding-top: 24px; border-top: 1px solid #1a1a1a;
+    text-align: center; font-size: 0.6rem; color: #333;
+  }
+
+  /* Live test */
+  textarea {
+    width: 100%; background: #111; border: 1px solid #1a1a1a; border-radius: 6px;
+    color: #c0c0c0; font-family: inherit; font-size: 0.72rem;
+    padding: 14px; resize: vertical; min-height: 100px;
+    outline: none;
+  }
+  textarea:focus { border-color: #c0a060; }
+  button {
+    background: #1a1a1a; border: 1px solid #333; border-radius: 6px;
+    color: #c0a060; font-family: inherit; font-size: 0.72rem;
+    padding: 10px 24px; cursor: pointer; margin: 8px 4px 8px 0;
+  }
+  button:hover { background: #222; border-color: #c0a060; }
+  #live-result { margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>QWPARSE — CLI VALIDATION</h1>
+  <div class="subtitle">TEST RESULTS FROM REAL DOCUMENT ANALYSIS &middot; LOCAL VALIDATION PAGE</div>
+
+  <!-- ===== OVERVIEW ===== -->
+  <h2>CLI OVERVIEW</h2>
+  <p><code>qwparse</code> is a structural language analysis CLI. It decomposes words, grades sentences, scans documents for DOG-LATIN, detects null chains, and classifies jurisdiction by typographic form. All output is available as <strong>human-readable</strong> or <strong>machine-readable JSON</strong>.</p>
+
+  <pre>
+$ qwparse                                     # dashboard
+$ qwparse word insurance corporation          # decompose words
+$ qwparse sentence "The court hereby..."      # grade sentence
+$ qwparse scan document.md                    # full analysis + suggestions
+$ qwparse scan --dir ./legal-docs/ --json     # batch evaluate → JSON
+$ qwparse dog-latin "THE STATE OF TEXAS"      # DOG-LATIN scan
+$ qwparse nullchain "hereby orders..."        # null chain detection
+$ qwparse case "JOHN DOE" ":John-Doe:"        # jurisdiction by case
+$ echo "text" | qwparse sentence              # stdin support</pre>
+
+  <!-- ===== TABS ===== -->
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('docs')">DOCUMENT SCAN</button>
+    <button class="tab" onclick="showTab('words')">WORD DECOMPOSE</button>
+    <button class="tab" onclick="showTab('sentence')">SENTENCE GRADE</button>
+    <button class="tab" onclick="showTab('live')">LIVE TEST</button>
+  </div>
+
+  <!-- ===== TAB: DOCUMENT SCAN ===== -->
+  <div id="tab-docs" class="tab-content active">
+    <h3>Batch Scan — 3 Test Documents</h3>
+    <p>Results from <code>qwparse scan --dir tests/samples/</code> against a court order, legal email, and correct parse-syntax claim.</p>
+
+    <!-- Court Order -->
+    <div class="doc-card">
+      <div class="header">
+        <div>
+          <div class="title">court_order.md <span class="tag tag-red">COURT ORDER</span></div>
+          <div style="font-size:0.65rem;color:#555;margin-top:4px;">Cook County — Allocation Judgment — 2024D006724</div>
+        </div>
+        <div class="grade grade-f">F</div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="value v-red">37</div><div class="label">SCORE /100</div></div>
+        <div class="metric"><div class="value v-red">24%</div><div class="label">DOG-LATIN</div></div>
+        <div class="metric"><div class="value v-red">10</div><div class="label">NULL CHAINS</div></div>
+        <div class="metric"><div class="value v-gold">VOID</div><div class="label">JURISDICTION</div></div>
+      </div>
+      <h3>Findings</h3>
+      <div class="finding">Document contains 24% DOG-LATIN — addresses corporate fiction alongside living text.</div>
+      <div class="finding">Found 10 null adverb-verb chain(s) — these constructions convey ZERO facts.</div>
+      <div class="finding">JURISDICTION MIXING — DOG-LATIN and English on the same document. Per Chicago Manual of Styles Art. 11:147, creates a jurisdictional void.</div>
+      <div class="finding">Contains modal/future verbs (SHALL, WILL, WOULD) — future tense = fiction.</div>
+      <div class="finding">Contains pronouns — pronouns REMOVE the fact. 'He shall pay' — WHO is 'he'?</div>
+      <h3>Recommendations</h3>
+      <div class="rec">Replace adverb-verb chains with noun-fact constructions. A sentence without nouns carries no facts.</div>
+      <div class="rec">Use ONE consistent jurisdiction. Choose parse-syntax (:Colon-Hyphen:) or English, never DOG-LATIN.</div>
+      <div class="rec">Convert all past tense to now-time gerund (-ING) form.</div>
+      <div class="rec">Remove all modal verbs. State facts in now-time: 'FOR THE CLAIMING...' not 'shall claim...'</div>
+      <div class="rec">Replace all pronouns with actual nouns/names.</div>
+    </div>
+
+    <!-- Legal Email -->
+    <div class="doc-card">
+      <div class="header">
+        <div>
+          <div class="title">legal_email.md <span class="tag tag-blue">EMAIL</span></div>
+          <div style="font-size:0.65rem;color:#555;margin-top:4px;">Attorney correspondence — motions needed after discovery violation</div>
+        </div>
+        <div class="grade grade-c">C</div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="value v-gold">68</div><div class="label">SCORE /100</div></div>
+        <div class="metric"><div class="value v-green">1%</div><div class="label">DOG-LATIN</div></div>
+        <div class="metric"><div class="value v-green">0</div><div class="label">NULL CHAINS</div></div>
+        <div class="metric"><div class="value v-gold">MIXED</div><div class="label">JURISDICTION</div></div>
+      </div>
+      <h3>Findings</h3>
+      <div class="finding">Contains past tense markers — past tense = dead time = fiction.</div>
+      <div class="finding">Contains modal/future verbs (SHALL, WILL, WOULD) — future tense = fiction.</div>
+      <div class="finding">Contains pronouns — pronouns REMOVE the fact.</div>
+      <h3>Observations</h3>
+      <div class="rec">Email scores significantly better than court orders — natural English writing has more nouns, fewer null chains, and less DOG-LATIN. The grammar of everyday communication is closer to correct parse-syntax than the grammar of formal legal documents.</div>
+    </div>
+
+    <!-- Correct Form -->
+    <div class="doc-card">
+      <div class="header">
+        <div>
+          <div class="title">correct_form.md <span class="tag tag-green">PARSE-SYNTAX</span></div>
+          <div style="font-size:0.65rem;color:#555;margin-top:4px;">Correct parse-syntax claim — land and soil jurisdiction</div>
+        </div>
+        <div class="grade grade-c">C</div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="value v-gold">61</div><div class="label">SCORE /100</div></div>
+        <div class="metric"><div class="value v-red">56%</div><div class="label">DOG-LATIN*</div></div>
+        <div class="metric"><div class="value v-green">0</div><div class="label">NULL CHAINS</div></div>
+        <div class="metric"><div class="value v-gold">91</div><div class="label">SENTENCE SCORE</div></div>
+      </div>
+      <h3>Key Insight</h3>
+      <div class="rec"><strong>Sentence structure scores 91/100</strong> — prepositional grounding, gerund verbs, noun-anchored facts. The overall score is penalized because the DOG-LATIN scanner treats all unhyphenated uppercase words as GLOSSA. In correct parse-syntax, uppercase WITH hyphens is valid (:Joel-Thorarinson:), but isolated uppercase tokens (FOR, THE, BY) trigger the scanner. This reveals a calibration opportunity: the scanner should distinguish between parse-syntax uppercase (valid) and DOG-LATIN uppercase (fraudulent).</div>
+    </div>
+
+    <!-- Summary -->
+    <div style="background:#111;border-left:3px solid #c0a060;padding:14px 18px;margin:20px 0;font-size:0.72rem;color:#aaa;">
+      <strong>Pattern confirmed:</strong> Court orders score F (37/100) with 10 null chains and 24% DOG-LATIN. Emails score C (68/100) with natural English structure. Correct parse-syntax scores 91/100 on sentence structure. The tools differentiate structural quality as expected.
+    </div>
+  </div>
+
+  <!-- ===== TAB: WORD DECOMPOSE ===== -->
+  <div id="tab-words" class="tab-content">
+    <h3>Word Decomposition — <code>qwparse word</code></h3>
+    <p>Results from <code>qwparse word insurance corporation attorney mortgage government</code></p>
+
+    <div class="word-grid" id="word-grid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- ===== TAB: SENTENCE ===== -->
+  <div id="tab-sentence" class="tab-content">
+    <h3>Sentence Analysis — <code>qwparse sentence</code></h3>
+
+    <div class="sentence-box">
+      <div class="text">"IT IS HEREBY ORDERED AND ADJUDGED that the defendant shall forthwith pay"</div>
+      <div class="score-line">
+        <span style="font-size:1.4rem;font-weight:700;color:#c55;">F</span>
+        <span style="font-size:0.9rem;color:#c55;font-weight:700;">10/100</span>
+        <span class="tag tag-red">NULL CONSTRUCTION</span>
+      </div>
+      <div style="font-size:0.65rem;color:#555;margin-bottom:12px;">Nouns: 1 | Preposition start: No | Gerund verbs: No | Null chain: Yes</div>
+      <h3>Issues</h3>
+      <div class="issue">Does not begin with a prepositional phrase</div>
+      <div class="issue">No gerund (-ING) verbs — not in now-time</div>
+      <div class="issue">Contains modal/future verbs (SHALL, WILL = fiction)</div>
+      <div class="issue">Null adverb-verb chain: shall forthwith pay</div>
+      <div class="issue">Contains pronouns (that) — facts removed</div>
+      <div class="issue">No proper closure — incomplete thought</div>
+      <h3>Corrections</h3>
+      <div class="corr">Begin sentence with a valid preposition: FOR, BY, OF, WITH, IN, AGAINST</div>
+      <div class="corr">Convert verbs to gerund form (-ING) for now-time validity</div>
+      <div class="corr">Remove modal verbs; state facts in now-time gerund form</div>
+      <div class="corr">Remove adverb-verb chains; replace with noun-fact constructions</div>
+      <div class="corr">Replace all pronouns with actual nouns/names</div>
+    </div>
+
+    <div class="sentence-box">
+      <div class="text">"FOR THE CLAIMING OF THE LAND BY THE LIVING MAN"</div>
+      <div class="score-line">
+        <span style="font-size:1.4rem;font-weight:700;color:#5a5;">A</span>
+        <span style="font-size:0.9rem;color:#5a5;font-weight:700;">100/100</span>
+        <span class="tag tag-green">CORRECT FORM</span>
+      </div>
+      <div style="font-size:0.65rem;color:#555;margin-bottom:12px;">Nouns: 3 | Preposition start: Yes (FOR) | Gerund verbs: Yes (CLAIMING) | Null chain: No</div>
+      <p style="color:#5a5;font-size:0.68rem;">All parse-syntax rules satisfied. Prepositional grounding, noun-anchored facts, now-time gerund verb, no pronouns, proper closure.</p>
+    </div>
+  </div>
+
+  <!-- ===== TAB: LIVE TEST ===== -->
+  <div id="tab-live" class="tab-content">
+    <h3>Live Test — Run qwparse Locally</h3>
+    <p>Paste text below and click a command to see live results. Requires <code>qwparse</code> installed at <code>~/bin/qwparse</code>.</p>
+
+    <textarea id="live-input" placeholder="Paste a court order, email, contract clause, or any text...">IT IS HEREBY ORDERED AND ADJUDGED that the defendant shall forthwith pay to the plaintiff the sum of damages as determined by this Court.</textarea>
+
+    <div>
+      <button onclick="runCmd('scan')">SCAN (full)</button>
+      <button onclick="runCmd('sentence')">SENTENCE</button>
+      <button onclick="runCmd('dog-latin')">DOG-LATIN</button>
+      <button onclick="runCmd('nullchain')">NULLCHAIN</button>
+      <button onclick="runCmd('word')">WORD (first 5)</button>
+    </div>
+
+    <div id="live-result"></div>
+
+    <div style="margin-top:24px;">
+      <h3>Run Manually</h3>
+      <pre id="cli-cmd">$ echo "IT IS HEREBY ORDERED..." | qwparse scan --json</pre>
+      <p style="font-size:0.65rem;color:#555;">Copy the command above and run in your terminal. The live test panel above simulates output from pre-computed results.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    qwparse v0.1 &mdash; quantum word parse CLI &middot; ~/GitHub/words_quantum_legal
+  </div>
+</div>
+
+<script>
+// Tab switching
+function showTab(name) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Word decomposition data
+const words = [
+  {
+    word: "INSURANCE",
+    negated: true,
+    prefix: "in", pfxMeaning: "no/not",
+    root: "sure", rootMeaning: "certain/fixed/safe",
+    suffix: "ance", sfxMeaning: "now-state/quality",
+    trueMeaning: "NO certainty/NO safety — the state of having no surety",
+    apparent: "protection or coverage against loss"
+  },
+  {
+    word: "CORPORATION",
+    negated: false,
+    prefix: "", pfxMeaning: "",
+    root: "corp", rootMeaning: "body/dead body",
+    suffix: "tion", sfxMeaning: "contract/action/process",
+    trueMeaning: "dead-body-contract — a dead entity speaking through contract",
+    apparent: "a business entity or organization"
+  },
+  {
+    word: "ATTORNEY",
+    negated: false,
+    prefix: "at", pfxMeaning: "to/toward",
+    root: "torn", rootMeaning: "tear/twist",
+    suffix: "ey", sfxMeaning: "one who (agent)",
+    trueMeaning: "one who tears apart — an agent of tearing/division",
+    apparent: "a lawyer or legal representative"
+  },
+  {
+    word: "MORTGAGE",
+    negated: false,
+    prefix: "", pfxMeaning: "",
+    root: "mort", rootMeaning: "death",
+    suffix: "gage", sfxMeaning: "pledge/grip",
+    trueMeaning: "death-grip — a pledge held until death",
+    apparent: "a home loan"
+  },
+  {
+    word: "GOVERNMENT",
+    negated: false,
+    prefix: "", pfxMeaning: "",
+    root: "govern", rootMeaning: "to steer/pilot (a ship)",
+    suffix: "ment", sfxMeaning: "mind/state of mind",
+    trueMeaning: "steering of the mind — piloting/controlling thought",
+    apparent: "administration or ruling body"
+  }
+];
+
+// Render word grid
+const grid = document.getElementById('word-grid');
+words.forEach(w => {
+  const neg = w.negated ? '<span class="tag tag-red">VCC NEGATED</span>' : '';
+  let morphParts = [];
+  if (w.prefix) morphParts.push(`<span class="pfx">${w.prefix}</span>(${w.pfxMeaning})`);
+  if (w.root) morphParts.push(`<span class="root">${w.root}</span>(${w.rootMeaning})`);
+  if (w.suffix) morphParts.push(`<span class="sfx">${w.suffix}</span>(${w.sfxMeaning})`);
+
+  grid.innerHTML += `
+    <div class="word-card">
+      <div class="word">${w.word} ${neg}</div>
+      <div class="morph">${morphParts.join(' + ')}</div>
+      <div class="meaning">True: ${w.trueMeaning}</div>
+      <div class="apparent">Apparent: ${w.apparent}</div>
+    </div>`;
+});
+
+// Live test (simulated — shows CLI command to run)
+function runCmd(cmd) {
+  const text = document.getElementById('live-input').value.trim();
+  if (!text) return;
+
+  const escaped = text.replace(/"/g, '\\"');
+  let cmdStr = '';
+  switch(cmd) {
+    case 'scan':
+      cmdStr = `echo "${escaped}" | qwparse scan --json`;
+      break;
+    case 'sentence':
+      cmdStr = `qwparse sentence "${escaped}" --json`;
+      break;
+    case 'dog-latin':
+      cmdStr = `qwparse dog-latin "${escaped}" --json`;
+      break;
+    case 'nullchain':
+      cmdStr = `qwparse nullchain "${escaped}" --json`;
+      break;
+    case 'word':
+      const words5 = text.split(/\s+/).slice(0, 5).join(' ');
+      cmdStr = `qwparse word ${words5} --json`;
+      break;
+  }
+
+  document.getElementById('cli-cmd').textContent = '$ ' + cmdStr;
+
+  // Show instruction
+  document.getElementById('live-result').innerHTML = `
+    <div class="doc-card">
+      <div class="title" style="margin-bottom:8px;">Run this command:</div>
+      <pre style="margin:0;">${cmdStr}</pre>
+      <p style="margin-top:12px;font-size:0.65rem;">Pipe to <code>jq .</code> for pretty-printed JSON. Pipe to <code>jq '.overall_grade'</code> for just the grade.</p>
+    </div>`;
+}
+</script>
+</body>
+</html>

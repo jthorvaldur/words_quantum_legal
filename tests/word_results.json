@@ -1,0 +1,177 @@
+[
+  {
+    "word": "insurance",
+    "word_lower": "insurance",
+    "decomposition": {
+      "word": "insurance",
+      "prefix": "in",
+      "prefix_meaning": "no/not",
+      "root": "sure",
+      "root_meaning": "certain/fixed/safe",
+      "suffix": "ance",
+      "suffix_meaning": "now-state/quality",
+      "is_negated": true,
+      "true_meaning": "NO certainty/NO safety — the state of having no surety",
+      "apparent_meaning": "protection or coverage against loss"
+    },
+    "jurisdiction": {
+      "form": "insurance",
+      "classification": "diminished (all lowercase)",
+      "jurisdiction": "unknown",
+      "status": "WARNING — no standing / diminished form",
+      "warning": "All-lowercase form has no standing. Consider proper case."
+    },
+    "now_time": {
+      "word": "insurance",
+      "tense": "base form (atemporal)",
+      "is_now_time": true,
+      "status": "NEUTRAL — base form, evaluate in sentence context"
+    },
+    "vcc_negated": true,
+    "negation_prefix": {
+      "prefix": "in",
+      "remainder": "surance"
+    },
+    "summary": "insurance: VCC-NEGATED | NOW-TIME"
+  },
+  {
+    "word": "corporation",
+    "word_lower": "corporation",
+    "decomposition": {
+      "word": "corporation",
+      "prefix": "",
+      "prefix_meaning": "",
+      "root": "corp",
+      "root_meaning": "body/dead body",
+      "suffix": "tion",
+      "suffix_meaning": "contract/action/process",
+      "is_negated": false,
+      "true_meaning": "dead-body-contract — a dead entity speaking through contract",
+      "apparent_meaning": "a business entity or organization"
+    },
+    "jurisdiction": {
+      "form": "corporation",
+      "classification": "diminished (all lowercase)",
+      "jurisdiction": "unknown",
+      "status": "WARNING — no standing / diminished form",
+      "warning": "All-lowercase form has no standing. Consider proper case."
+    },
+    "now_time": {
+      "word": "corporation",
+      "tense": "base form (atemporal)",
+      "is_now_time": true,
+      "status": "NEUTRAL — base form, evaluate in sentence context"
+    },
+    "vcc_negated": false,
+    "negation_prefix": {
+      "prefix": null,
+      "remainder": null
+    },
+    "summary": "corporation: NOW-TIME"
+  },
+  {
+    "word": "attorney",
+    "word_lower": "attorney",
+    "decomposition": {
+      "word": "attorney",
+      "prefix": "at",
+      "prefix_meaning": "to/toward",
+      "root": "torn",
+      "root_meaning": "tear/twist",
+      "suffix": "ey",
+      "suffix_meaning": "one who (agent)",
+      "is_negated": false,
+      "true_meaning": "one who tears apart — an agent of tearing/division",
+      "apparent_meaning": "a lawyer or legal representative"
+    },
+    "jurisdiction": {
+      "form": "attorney",
+      "classification": "diminished (all lowercase)",
+      "jurisdiction": "unknown",
+      "status": "WARNING — no standing / diminished form",
+      "warning": "All-lowercase form has no standing. Consider proper case."
+    },
+    "now_time": {
+      "word": "attorney",
+      "tense": "base form (atemporal)",
+      "is_now_time": true,
+      "status": "NEUTRAL — base form, evaluate in sentence context"
+    },
+    "vcc_negated": false,
+    "negation_prefix": {
+      "prefix": null,
+      "remainder": null
+    },
+    "summary": "attorney: NOW-TIME"
+  },
+  {
+    "word": "mortgage",
+    "word_lower": "mortgage",
+    "decomposition": {
+      "word": "mortgage",
+      "prefix": "",
+      "prefix_meaning": "",
+      "root": "mort",
+      "root_meaning": "death",
+      "suffix": "age",
+      "suffix_meaning": "act/state/collection",
+      "is_negated": false,
+      "true_meaning": "death-grip/death-pledge — a pledge unto death",
+      "apparent_meaning": "a loan secured by real property"
+    },
+    "jurisdiction": {
+      "form": "mortgage",
+      "classification": "diminished (all lowercase)",
+      "jurisdiction": "unknown",
+      "status": "WARNING — no standing / diminished form",
+      "warning": "All-lowercase form has no standing. Consider proper case."
+    },
+    "now_time": {
+      "word": "mortgage",
+      "tense": "base form (atemporal)",
+      "is_now_time": true,
+      "status": "NEUTRAL — base form, evaluate in sentence context"
+    },
+    "vcc_negated": false,
+    "negation_prefix": {
+      "prefix": null,
+      "remainder": null
+    },
+    "summary": "mortgage: NOW-TIME"
+  },
+  {
+    "word": "government",
+    "word_lower": "government",
+    "decomposition": {
+      "word": "government",
+      "prefix": "",
+      "prefix_meaning": "",
+      "root": "govern",
+      "root_meaning": "steer a ship",
+      "suffix": "ment",
+      "suffix_meaning": "mind/state/result of action",
+      "is_negated": false,
+      "true_meaning": "steering of the mind — maritime piloting of thought",
+      "apparent_meaning": "the system of administration and authority"
+    },
+    "jurisdiction": {
+      "form": "government",
+      "classification": "diminished (all lowercase)",
+      "jurisdiction": "unknown",
+      "status": "WARNING — no standing / diminished form",
+      "warning": "All-lowercase form has no standing. Consider proper case."
+    },
+    "now_time": {
+      "word": "government",
+      "tense": "base form (atemporal)",
+      "is_now_time": true,
+      "status": "NEUTRAL — base form, evaluate in sentence context"
+    },
+    "vcc_negated": false,
+    "negation_prefix": {
+      "prefix": null,
+      "remainder": null
+    },
+    "summary": "government: NOW-TIME"
+  }
+]
