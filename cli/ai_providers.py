@@ -284,17 +284,14 @@ ALL_PROVIDERS: list[Provider] = [
     GeminiProvider(),
 ]
 
-# Default model preference order (fast + cheap first for --ai default)
+# Default model preference order — local first, then cheap API
 DEFAULT_MODEL_PREFERENCE = [
-    "gemini-2.5-flash",        # free/cheap, fast, 1M context
+    "gemma4:e4b",             # local, free, reliable
+    "llama3.1:8b",            # local, free
     "claude-haiku-4-5-20251001",  # cheap, fast
     "gpt-4.1-mini",           # cheap, fast
-    "qwen3.5:latest",         # local, free
-    "gemma4:e4b",             # local, free
-    "llama3.1:8b",            # local, free
     "claude-sonnet-4-6",      # mid-tier
     "gpt-4.1",               # mid-tier
-    "gemini-2.5-pro",         # mid-tier
     "claude-opus-4-6",        # expensive
     "o3",                     # expensive
 ]
@@ -801,33 +798,26 @@ def gather_evidence(document: str, max_queries: int = 8,
 
 
 # ---------------------------------------------------------------------------
-# Fill-citations prompt for qwparse draft
+# Phase 4: Direct fact lookup + LLM fill for remainder
 # ---------------------------------------------------------------------------
 
 FILL_SYSTEM = """\
 You are a legal document finalizer. You have:
 
 1. A REVISED DOCUMENT with [CITE NEEDED: ...] placeholders
-2. EVIDENCE retrieved from the case database (emails, filings, financial
-   records, court transcripts, chat messages)
+2. EVIDENCE retrieved from the case database
 
 Your job is to fill every [CITE NEEDED] placeholder with REAL citations
-from the evidence provided. Follow these rules:
+from the evidence provided. Rules:
 
-- **ONLY use evidence that is actually provided.** Do not invent citations.
-- If the evidence contains the specific fact (date, amount, filing reference),
-  replace [CITE NEEDED: ...] with the actual citation in this format:
-  (Source: [collection/source_type], [date], "[relevant quote]")
-- If no evidence matches a particular [CITE NEEDED], keep the placeholder
-  but add [NO EVIDENCE FOUND] after it.
-- Do NOT change the document structure, argument, or wording beyond
-  filling citations.
-- If the evidence CONTRADICTS a claim in the document, insert a
-  [WARNING: evidence contradicts — ...] note.
-- Keep the document clean and professional — this is the FINAL version.
+- ONLY use evidence that is actually provided. Do not invent citations.
+- Replace [CITE NEEDED: ...] with the citation in format:
+  (Source: [collection], [date], "[relevant quote]")
+- If no evidence matches, keep the placeholder but add [UNFILLED] after it.
+- Do NOT change the document structure or argument.
+- If evidence CONTRADICTS a claim, insert [WARNING: contradicts — ...].
 
-Return ONLY the final document text, ready to send. No preamble, no
-explanation, no meta-commentary."""
+Return ONLY the final document text."""
 
 
 def build_fill_prompt(revised_doc: str, evidence: str) -> str:
@@ -840,3 +830,120 @@ def build_fill_prompt(revised_doc: str, evidence: str) -> str:
 
 Fill every [CITE NEEDED] with real citations from the evidence above.
 Return the final document only."""
+
+
+def direct_fill_citations(document: str, max_queries: int = 12) -> tuple[str, int]:
+    """Fill [CITE NEEDED] markers directly from DB without LLM.
+
+    For each marker, searches case_facts and legal_docs_v2 for matching
+    evidence and does a direct string replacement. No LLM needed for
+    facts that are already in the database.
+
+    Returns (filled_document, count_filled).
+    """
+    markers = list(re.finditer(r'\[CITE NEEDED:\s*([^\]]+)\]', document))
+    if not markers:
+        return document, 0
+
+    filled = 0
+    result_doc = document
+
+    # Build targeted queries from marker context
+    for match in reversed(markers[:max_queries]):  # Reversed so replacements don't shift offsets
+        marker_text = match.group(1).strip()
+        full_match = match.group(0)
+
+        # Get surrounding context (50 chars before the marker)
+        start = max(0, match.start() - 100)
+        context = document[start:match.start()]
+        # Clean context for search
+        context = re.sub(r'\[.*?\]', '', context).strip()
+        context = re.sub(r'[*#_\n]', ' ', context).strip()
+
+        # Build a focused search query
+        query = f"{context[-60:]} {marker_text}"[:120]
+
+        # Search DB
+        results = search_db(query, limit=2)
+
+        # Try to find a matching fact
+        best_citation = None
+        for r in results:
+            text = r.get("text", "")
+            if len(text) < 20:
+                continue
+            score = r.get("score", 0)
+            if score < 0.5:
+                continue
+
+            # Extract the relevant fact from the result text
+            citation = _extract_citation(marker_text, text, r)
+            if citation:
+                best_citation = citation
+                break
+
+        if best_citation:
+            result_doc = result_doc.replace(full_match, best_citation, 1)
+            filled += 1
+
+    return result_doc, filled
+
+
+def _extract_citation(marker: str, evidence_text: str, result: dict) -> str | None:
+    """Try to extract a specific citation from evidence text.
+
+    Matches the marker's intent against the evidence content.
+    Returns a formatted citation string or None.
+    """
+    collection = result.get("collection", "unknown")
+    date = result.get("date", "")
+    marker_lower = marker.lower()
+
+    # Date extraction
+    if any(kw in marker_lower for kw in ["date", "when", "filed on"]):
+        # Look for dates in evidence
+        dates = re.findall(
+            r'(?:January|February|March|April|May|June|July|August|September|'
+            r'October|November|December)\s+\d{1,2},?\s*\d{4}|'
+            r'\b20\d{2}-\d{2}-\d{2}\b|'
+            r'(?:on|dated?)\s+(\w+\s+\d{1,2},?\s+\d{4})',
+            evidence_text, re.I
+        )
+        if dates:
+            d = dates[0] if isinstance(dates[0], str) else dates[0]
+            return f"({collection}, {date or d}, \"{d}\")"
+
+    # Amount extraction
+    if any(kw in marker_lower for kw in ["amount", "$", "fee", "cost", "balance"]):
+        amounts = re.findall(r'\$[\d,]+(?:\.\d{2})?', evidence_text)
+        if amounts:
+            return f"({collection}, {date}, \"{amounts[0]}\")"
+
+    # Case facts (structured JSON in text)
+    if evidence_text.strip().startswith("{") or "'fact_id'" in evidence_text:
+        try:
+            # Try to parse as fact
+            fact_match = re.search(r"'statement':\s*'([^']+)'", evidence_text)
+            if fact_match:
+                statement = fact_match.group(1)
+                fact_id = re.search(r"'fact_id':\s*'([^']+)'", evidence_text)
+                fid = fact_id.group(1) if fact_id else ""
+                return f"(case_facts {fid}, {date}, \"{statement}\")"
+        except Exception:
+            pass
+
+    # Generic: if evidence has substantial matching content, cite it
+    # Check if key terms from the marker appear in the evidence
+    marker_terms = set(re.findall(r'\b\w{4,}\b', marker_lower))
+    evidence_lower = evidence_text.lower()
+    matching_terms = sum(1 for t in marker_terms if t in evidence_lower)
+
+    if matching_terms >= 2 and len(evidence_text) > 50:
+        # Extract a relevant snippet (first sentence that matches)
+        sentences = re.split(r'[.!?\n]', evidence_text)
+        for sent in sentences:
+            if any(t in sent.lower() for t in marker_terms) and len(sent.strip()) > 20:
+                snippet = sent.strip()[:150]
+                return f"({collection}, {date}, \"{snippet}\")"
+
+    return None

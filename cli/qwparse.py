@@ -986,29 +986,48 @@ def cmd_draft(args):
                     elif line.startswith("**Source:**"):
                         print(f"    {c('dim')}{line}{c('reset')}", file=out)
 
-            # ── Phase 4: AI fills citations ───────────────────────
-            print(f"\n  {c('bold')}PHASE 4: FILL CITATIONS{c('reset')} "
-                  f"{c('dim')}via {model_id}{c('reset')}", file=out)
+            # ── Phase 4: Fill citations (direct DB lookup, no LLM) ─
+            print(f"\n  {c('bold')}PHASE 4: FILL CITATIONS (direct DB lookup){c('reset')}", file=out)
             print(f"  {c('dim')}{'─' * 50}{c('reset')}", file=out)
-            print(f"  {c('dim')}Generating final document...{c('reset')}",
-                  end="", flush=True, file=out)
+            print(f"  {c('dim')}Matching [CITE NEEDED] markers to DB evidence...{c('reset')}",
+                  file=out)
 
-            fill_prompt = build_fill_prompt(current_doc, evidence)
-            try:
-                final = complete(model_id, FILL_SYSTEM, fill_prompt, max_tokens=8192)
-                current_doc = final
-                remaining_cites = final.count("[CITE NEEDED")
-                filled = cite_count - remaining_cites
-                print(f"\r  Filled {filled}/{cite_count} citations, "
-                      f"{remaining_cites} remaining{' ' * 20}", file=out)
-            except Exception as e:
-                print(f"\r  {c('red')}Citation fill error: {e}{c('reset')}",
-                      file=sys.stderr)
+            from ai_providers import direct_fill_citations
+            current_doc, direct_filled = direct_fill_citations(current_doc, max_queries=12)
+            remaining_cites = current_doc.count("[CITE NEEDED")
+            print(f"  Direct fill: {direct_filled}/{cite_count} citations resolved from DB",
+                  file=out)
+            print(f"  Remaining:   {remaining_cites} (need manual fill or more DB data)",
+                  file=out)
+
+            # If evidence was found and there are still gaps, try LLM fill
+            # on the remaining markers using the evidence context
+            if remaining_cites > 0 and evidence:
+                print(f"  {c('dim')}Attempting LLM fill for {remaining_cites} remaining...{c('reset')}",
+                      end="", flush=True, file=out)
+                fill_prompt = build_fill_prompt(current_doc, evidence)
+                try:
+                    final = complete(model_id, FILL_SYSTEM, fill_prompt, max_tokens=8192)
+                    if final and len(final) > 100:
+                        new_remaining = final.count("[CITE NEEDED")
+                        llm_filled = remaining_cites - new_remaining
+                        if llm_filled > 0:
+                            current_doc = final
+                            remaining_cites = new_remaining
+                        print(f"\r  LLM fill: +{llm_filled} additional "
+                              f"({remaining_cites} still remaining){' ' * 10}", file=out)
+                    else:
+                        print(f"\r  LLM fill: skipped (insufficient response){' ' * 20}",
+                              file=out)
+                except Exception as e:
+                    print(f"\r  {c('dim')}LLM fill skipped: {e}{c('reset')}{' ' * 20}",
+                          file=out)
     else:
         print(f"\n  {c('dim')}No [CITE NEEDED] markers to fill.{c('reset')}", file=out)
 
-    # ── Phase 5: Final score (dual metrics) ─────────────────────
+    # ── Phase 5: Final score (triple metrics) ────────────────────
     from effectiveness import score_effectiveness, format_effectiveness
+    from influence import score_influence, format_influence
 
     print(f"\n  {c('bold')}PHASE 5: FINAL SCORE{c('reset')}", file=out)
     print(f"  {c('dim')}{'─' * 50}{c('reset')}", file=out)
@@ -1047,20 +1066,75 @@ def cmd_draft(args):
     # Show dimension breakdown for final
     print(f"\n{format_effectiveness(eff_final)}", file=out)
 
+    # Influence score (behavioral layer targeting)
+    from influence import detect_audience
+    if getattr(args, "audience", None):
+        audience = args.audience
+        print(f"\n  {c('dim')}Audience: {audience} (specified){c('reset')}", file=out)
+    else:
+        audience = detect_audience(text)
+        print(f"\n  {c('dim')}Audience: {audience} (auto-detected){c('reset')}", file=out)
+
+    inf_orig = score_influence(text, audience=audience)
+    inf_final = score_influence(current_doc, audience=audience)
+    inf_delta = inf_final.total - inf_orig.total
+    inf_delta_str = f"+{inf_delta}" if inf_delta > 0 else str(inf_delta)
+    inf_delta_color = c("green") if inf_delta > 0 else c("red") if inf_delta < 0 else c("dim")
+
+    inf_gc = c("green") if inf_final.grade in ("A", "B") else c("yellow") if inf_final.grade == "C" else c("red")
+    inf_gc_o = c("green") if inf_orig.grade in ("A", "B") else c("yellow") if inf_orig.grade == "C" else c("red")
+    print(f"\n  {c('bold')}Influence (behavioral layer targeting){c('reset')}", file=out)
+    print(f"    Original:  {inf_gc_o}{inf_orig.total}/100{c('reset')} "
+          f"({inf_gc_o}{inf_orig.grade}{c('reset')}) "
+          f"{c('dim')}audience: {inf_orig.audience}{c('reset')}", file=out)
+    print(f"    Final:     {inf_gc}{inf_final.total}/100{c('reset')} "
+          f"({inf_gc}{inf_final.grade}{c('reset')}) "
+          f"{c('dim')}audience: {inf_final.audience}{c('reset')}", file=out)
+    print(f"    Delta:     {inf_delta_color}{inf_delta_str}{c('reset')}", file=out)
+    print(f"\n{format_influence(inf_final)}", file=out)
+
+    # Audience-weighted composite
+    COMPOSITE_WEIGHTS = {
+        "judge":            (0.50, 0.35, 0.15),  # eff, inf, parse
+        "opposing_counsel": (0.30, 0.55, 0.15),
+        "opposing_party":   (0.25, 0.55, 0.20),
+        "mediator":         (0.40, 0.40, 0.20),
+        "gal":              (0.45, 0.35, 0.20),
+        "ardc":             (0.55, 0.25, 0.20),
+        "clerk":            (0.60, 0.10, 0.30),
+        "public":           (0.30, 0.50, 0.20),
+        "self":             (0.40, 0.30, 0.30),
+    }
+    w_eff, w_inf, w_parse = COMPOSITE_WEIGHTS.get(audience, (0.40, 0.40, 0.20))
+    composite_orig = int(eff_orig.total * w_eff + inf_orig.total * w_inf +
+                         result["overall_score"] * w_parse)
+    composite_final = int(eff_final.total * w_eff + inf_final.total * w_inf +
+                          final_result["overall_score"] * w_parse)
+    comp_delta = composite_final - composite_orig
+    comp_delta_str = f"+{comp_delta}" if comp_delta > 0 else str(comp_delta)
+    comp_gc = c("green") if composite_final >= 70 else c("yellow") if composite_final >= 50 else c("red")
+    comp_dc = c("green") if comp_delta > 0 else c("red") if comp_delta < 0 else c("dim")
+
+    print(f"\n  {c('bold')}COMPOSITE ({audience} weights: "
+          f"eff={w_eff:.0%} inf={w_inf:.0%} parse={w_parse:.0%}){c('reset')}", file=out)
+    print(f"    Original:  {composite_orig}/100", file=out)
+    print(f"    Final:     {comp_gc}{composite_final}/100{c('reset')}", file=out)
+    print(f"    Delta:     {comp_dc}{comp_delta_str}{c('reset')}", file=out)
+
     # ── Output ────────────────────────────────────────────────────
     if args.json:
         print(json.dumps({
             "title": title,
-            "parse_syntax": {
-                "original": result["overall_score"],
-                "final": final_result["overall_score"],
-                "delta": delta,
+            "scores": {
+                "parse_syntax": {"original": result["overall_score"],
+                                 "final": final_result["overall_score"], "delta": delta},
+                "effectiveness": {"original": eff_orig.total, "final": eff_final.total,
+                                  "delta": eff_delta},
+                "influence": {"original": inf_orig.total, "final": inf_final.total,
+                              "delta": inf_delta},
             },
-            "effectiveness": {
-                "original": eff_orig.to_dict(),
-                "final": eff_final.to_dict(),
-                "delta": eff_delta,
-            },
+            "effectiveness_detail": eff_final.to_dict(),
+            "influence_detail": inf_final.to_dict(),
             "model": model_id,
             "passes": passes,
             "citations_remaining": current_doc.count("[CITE NEEDED"),
@@ -1476,6 +1550,9 @@ def build_parser() -> argparse.ArgumentParser:
     p_draft.add_argument("text", nargs="*", help="Text or filename")
     p_draft.add_argument("-f", "--file", help="Read from file (.md, .txt, .pdf)")
     p_draft.add_argument("--model", help="Model ID (see: qwparse models)")
+    p_draft.add_argument("--audience", help="Target audience: judge, opposing_counsel, "
+                         "opposing_party, mediator, gal, ardc, clerk, public, self "
+                         "(auto-detected if not specified)")
     p_draft.add_argument("--passes", type=int, help="Number of revise passes (default: 2)")
     p_draft.add_argument("-o", "--output", help="Write final document to file")
     p_draft.add_argument("--json", action="store_true", help="JSON output")
